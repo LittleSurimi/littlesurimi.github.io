@@ -61,11 +61,14 @@
       padding: @unit 0 @unit @unit*2;
       margin: 0;
     }
-    p, li{
+    p, 
+    li,
+    .greenid-so-content-dropcap-listitem {
       font-size: @unit;
       line-height: @lineHeight;
       padding: 0;
       margin-bottom: @unit;
+      min-height: auto;
       strong {
         font-family: @font; 
         font-weight: 700;
@@ -87,12 +90,6 @@
       font-weight: 700;
       margin-top: @unit*2;
       margin-bottom: @unit/ 4;
-    }
-
-    .greenid-so-content-dropcap-listitem{
-      padding-left: inherit;
-      margin-bottom: inherit;
-      min-height: none;
     }
   }
 }
