@@ -23,6 +23,7 @@
 .greenid-so-modal#greenid-wait-modal .modal-dialog {
   display: flex;
   flex: 1;
+  flex-direction: column;
   margin-top: 0;
 }
 .greenid-so-modal#greenid-wait-modal .modal-content {
