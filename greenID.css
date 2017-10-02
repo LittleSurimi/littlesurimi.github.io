@@ -49,3 +49,7 @@ h1 {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+#greenid-completelater,
+#greenid-source-help {
+  display: none !important;
+}
