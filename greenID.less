@@ -1,47 +1,15 @@
 // load in http://mockup.edentiti.com/greenid-mobile/
 // https://littlesurimi.github.io/greenID.css
-
-// Colors 
-@red:#FC4349;
-@alert: #FC4349;
-@green: #8CC63F;
-@valid: #8CC63F;
-@dark: #213249;
-@light: #F1F5FC;
-@background: #ffffff;
-@white: #ffffff;
-@base: #445878;
-@primary: #799AE0;
-@pink: #FF87C3;
-@turquoise: #58CBCF;
-@yellow: #DECD58;
-@orange: #FFAA4A;
-@black: #213249;
-
-// grid
-@unit: 1rem;
-@headline: 2rem;
-@title: 1.5rem;
-@subheader: 1.125rem;
-@body: 0.875rem;
-@caption: .75rem;
-@label: .625rem;
-@lineHeight: 1.5;
-@navIcon: 1.25rem;
-@border: .125rem;
-@font: 'Roboto-Regular';
-@fontAccent: 'Bitter-Bold';
-@lowOpacity: 0.4;
-@mediumOpacity: 0.6;
-@highOpacity: 0.8;
-
+@import "./node_modules/bootstrap/less/bootstrap.less";
+@import "src/bs_variables";
+@import "src/variables";
 
 .greenid-modal{
   display: flex!important;
   flex: 1!important;
   flex-direction: column!important;
-
 }
+
 // Loader Screen
 .greenid-so-modal {
   justify-content: space-between;
@@ -51,7 +19,7 @@
     width: 100%;
     height: 2.5rem;
     text-align: center;
-    background-image: url(./img/loader.gif);
+    background-image: url(src/img/loader.gif);
     background-size: 2.5rem;
     background-repeat: no-repeat;
     background-position: center center;
@@ -71,7 +39,7 @@
       display: flex;
       flex: 1;
     }
-    // Wrap load text and gif 
+    // Wrap load text and gif
     .modal-body{
       display: flex;
       flex: 1;
