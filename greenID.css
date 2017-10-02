@@ -36,6 +36,10 @@
   border-color: rgba(140, 198, 63, 0.2);
   color: #8cc63f;
 }
+.greenid-modal #greenid-container .greenid-alert .glyphicon,
+.greenid-so-content #greenid-container .greenid-alert .glyphicon {
+  display: none;
+}
 .greenid-modal #greenid-container h1,
 .greenid-so-content #greenid-container h1 {
   font-family: 'Bitter-Bold';
