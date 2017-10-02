@@ -49,14 +49,24 @@
     color: @base; 
     position: relative;
 
-    .greenid-so-content-nav{
-      position: fixed;
-      top: -@unit*2;
-      left: -@unit*2;
-      padding: 0 @unit;
-      height: @unit*3;
-      background-color: @turquoise;
-      color: @white;
+    .greenid-so-content{
+      &&-nav{
+        position: fixed;
+        top: -@unit*2;
+        left: -@unit*2;
+        padding: 0 @unit;
+        height: @unit*3;
+        background-color: @turquoise;
+        color: @white;
+      }
+      &&-dropcap{
+        font-family: @font ;
+        font-size: @headline;
+        color: @brand;
+        line-height: @headline * @lineHeight;
+        font-weight: 200;
+
+      }
     }
     .greenid-alert{
       font-size: @unit;
@@ -72,11 +82,12 @@
         display: none;
       }
     }
-    h1, h4 {
+    h1{
       font-family: @fontAccent ;
       font-size: @headline;
       color: @brand;
       line-height: @headline * @lineHeight;
+      font-weight: 700;
     }
 
     p{

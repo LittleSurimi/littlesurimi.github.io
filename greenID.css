@@ -11,8 +11,10 @@
   color: #445878;
   position: relative;
 }
-.greenid-modal #greenid-container .greenid-so-content-nav,
-.greenid-so-content #greenid-container .greenid-so-content-nav {
+.greenid-modal #greenid-container .greenid-so-content.greenid-modal #greenid-container .greenid-so-content-nav,
+.greenid-modal #greenid-container .greenid-so-content.greenid-so-content #greenid-container .greenid-so-content-nav,
+.greenid-so-content #greenid-container .greenid-so-content.greenid-modal #greenid-container .greenid-so-content-nav,
+.greenid-so-content #greenid-container .greenid-so-content.greenid-so-content #greenid-container .greenid-so-content-nav {
   position: fixed;
   top: -2rem;
   left: -2rem;
@@ -20,6 +22,16 @@
   height: 3rem;
   background-color: #58cbcf;
   color: #ffffff;
+}
+.greenid-modal #greenid-container .greenid-so-content.greenid-modal #greenid-container .greenid-so-content-dropcap,
+.greenid-modal #greenid-container .greenid-so-content.greenid-so-content #greenid-container .greenid-so-content-dropcap,
+.greenid-so-content #greenid-container .greenid-so-content.greenid-modal #greenid-container .greenid-so-content-dropcap,
+.greenid-so-content #greenid-container .greenid-so-content.greenid-so-content #greenid-container .greenid-so-content-dropcap {
+  font-family: 'Roboto-Regular';
+  font-size: 2rem;
+  color: #1b4581;
+  line-height: 3rem;
+  font-weight: 200;
 }
 .greenid-modal #greenid-container .greenid-alert,
 .greenid-so-content #greenid-container .greenid-alert {
@@ -41,13 +53,12 @@
   display: none;
 }
 .greenid-modal #greenid-container h1,
-.greenid-so-content #greenid-container h1,
-.greenid-modal #greenid-container h4,
-.greenid-so-content #greenid-container h4 {
+.greenid-so-content #greenid-container h1 {
   font-family: 'Bitter-Bold';
   font-size: 2rem;
   color: #1b4581;
   line-height: 3rem;
+  font-weight: 700;
 }
 .greenid-modal #greenid-container p,
 .greenid-so-content #greenid-container p {
