@@ -41,7 +41,9 @@
   display: none;
 }
 .greenid-modal #greenid-container h1,
-.greenid-so-content #greenid-container h1 {
+.greenid-so-content #greenid-container h1,
+.greenid-modal #greenid-container h4,
+.greenid-so-content #greenid-container h4 {
   font-family: 'Bitter-Bold';
   font-size: 2rem;
   color: #1b4581;
