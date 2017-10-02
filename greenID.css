@@ -40,7 +40,9 @@
   color: #58cbcf;
 }
 .greenid-modal #greenid-container .btn-primary,
-.greenid-so-content #greenid-container .btn-primary {
+.greenid-so-content #greenid-container .btn-primary,
+.greenid-modal #greenid-container .btn-link,
+.greenid-so-content #greenid-container .btn-link {
   background-color: #ffffff;
   color: #1b4581;
   text-transform: capitalize;
