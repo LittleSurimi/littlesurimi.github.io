@@ -21,6 +21,21 @@
   background-color: #58cbcf;
   color: #ffffff;
 }
+.greenid-modal #greenid-container .greenid-alert,
+.greenid-so-content #greenid-container .greenid-alert {
+  font-size: 1rem;
+  background-image: none;
+  padding: 1rem;
+  min-height: 70px;
+}
+.greenid-modal #greenid-container .greenid-alert.greenid-modal #greenid-container .greenid-alert-success,
+.greenid-modal #greenid-container .greenid-alert.greenid-so-content #greenid-container .greenid-alert-success,
+.greenid-so-content #greenid-container .greenid-alert.greenid-modal #greenid-container .greenid-alert-success,
+.greenid-so-content #greenid-container .greenid-alert.greenid-so-content #greenid-container .greenid-alert-success {
+  background-color: rgba(140, 198, 63, 0.1);
+  border-color: rgba(140, 198, 63, 0.2);
+  color: #8cc63f;
+}
 .greenid-modal #greenid-container h1,
 .greenid-so-content #greenid-container h1 {
   font-family: 'Bitter-Bold';
@@ -53,6 +68,7 @@
   border-radius: 0.125rem;
   font-family: 'Roboto-Regular';
   font-weight: 700;
+  margin-bottom: 0.25rem;
 }
 .greenid-so-modal {
   justify-content: space-between;

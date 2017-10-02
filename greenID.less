@@ -58,6 +58,17 @@
       background-color: @turquoise;
       color: @white;
     }
+    .greenid-alert{
+      font-size: @unit;
+      background-image: none;
+      padding: @unit;
+      min-height: 70px;
+      &&-success {
+        background-color: rgba(140, 198,63,.1);
+        border-color: rgba(140, 198,63,.2);
+        color: @valid;
+      }
+    }
     h1{
       font-family: @fontAccent ;
       font-size: @headline;
@@ -88,6 +99,7 @@
       border-radius: @border;
       font-family: @font; 
       font-weight: 700;
+      margin-bottom: @unit/ 4;
     }
   }
 }
