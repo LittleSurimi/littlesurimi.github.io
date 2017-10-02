@@ -37,6 +37,7 @@
 .greenid-so-content #greenid-container strong {
   font-family: 'Roboto-Regular';
   font-weight: 700;
+  color: #58cbcf;
 }
 .greenid-modal #greenid-container .btn-primary,
 .greenid-so-content #greenid-container .btn-primary {
