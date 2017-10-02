@@ -42,6 +42,7 @@
   display: flex!important;
   flex: 1!important;
   flex-direction: column!important;
+  padding: @unit*2;
 
   #greenid-container{
     font-family: @font; 
@@ -58,9 +59,21 @@
       font-size: @unit;
       line-height: @lineHeight;
     }
+
     strong {
       font-family: @font; 
-      font-weight: 800;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background-color: @white;
+      color:@brand;
+      text-transform: capitalize;
+      padding: @unit;
+      width: 100%;
+      font-size: @unit;
+      border: @border solid @brand;
+      border-radius: @border;
     }
   }
 }

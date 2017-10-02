@@ -3,6 +3,7 @@
   display: flex!important;
   flex: 1!important;
   flex-direction: column!important;
+  padding: 2rem;
 }
 .greenid-modal #greenid-container,
 .greenid-so-content #greenid-container {
@@ -24,7 +25,18 @@
 .greenid-modal #greenid-container strong,
 .greenid-so-content #greenid-container strong {
   font-family: 'Roboto-Regular';
-  font-weight: 800;
+  font-weight: 700;
+}
+.greenid-modal #greenid-container .btn-primary,
+.greenid-so-content #greenid-container .btn-primary {
+  background-color: #ffffff;
+  color: #1b4581;
+  text-transform: capitalize;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  border: 0.125rem solid #1b4581;
+  border-radius: 0.125rem;
 }
 .greenid-so-modal {
   justify-content: space-between;
