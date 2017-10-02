@@ -9,6 +9,17 @@
 .greenid-so-content #greenid-container {
   font-family: 'Roboto-Regular';
   color: #445878;
+  position: relative;
+}
+.greenid-modal #greenid-container .greenid-so-content-nav,
+.greenid-so-content #greenid-container .greenid-so-content-nav {
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  padding: 0 1rem;
+  height: 3rem;
+  background-color: #58cbcf;
+  color: #ffffff;
 }
 .greenid-modal #greenid-container h1,
 .greenid-so-content #greenid-container h1 {
@@ -37,6 +48,7 @@
   font-size: 1rem;
   border: 0.125rem solid #1b4581;
   border-radius: 0.125rem;
+  font-weight: 700;
 }
 .greenid-so-modal {
   justify-content: space-between;

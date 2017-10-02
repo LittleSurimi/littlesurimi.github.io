@@ -47,7 +47,17 @@
   #greenid-container{
     font-family: @font; 
     color: @base; 
+    position: relative;
 
+    .greenid-so-content-nav{
+      position: absolute;
+      top: -@unit*2;
+      left: -@unit*2;
+      padding: 0 @unit;
+      height: @unit*3;
+      background-color: @turquoise;
+      color: @white;
+    }
     h1{
       font-family: @fontAccent ;
       font-size: @headline;
@@ -74,6 +84,7 @@
       font-size: @unit;
       border: @border solid @brand;
       border-radius: @border;
+      font-weight: 700;
     }
   }
 }
