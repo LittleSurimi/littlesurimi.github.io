@@ -4,11 +4,17 @@
   flex: 1!important;
   flex-direction: column!important;
 }
-h1 {
-  font-family: 'Bitter-Bold' !important;
-  font-size: 2rem !important;
-  color: #1b4581 !important;
-  line-height: 3rem !important;
+.greenid-modal #greenid-container,
+.greenid-so-content #greenid-container {
+  font-family: 'Roboto-Regular';
+  color: #445878;
+}
+.greenid-modal #greenid-container h1,
+.greenid-so-content #greenid-container h1 {
+  font-family: 'Bitter-Bold';
+  font-size: 2rem;
+  color: #1b4581;
+  line-height: 3rem;
 }
 .greenid-so-modal {
   justify-content: space-between;

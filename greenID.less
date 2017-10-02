@@ -37,18 +37,23 @@
 @highOpacity: 0.8;
 
 
-
 .greenid-modal,
 .greenid-so-content{
   display: flex!important;
   flex: 1!important;
   flex-direction: column!important;
-}
-h1{
-  font-family: @fontAccent !important;
-  font-size: @headline !important;
-  color: @brand !important;
-  line-height: @headline * @lineHeight !important;
+
+  #greenid-container{
+    font-family: @font; 
+    color: @base; 
+
+    h1{
+      font-family: @fontAccent ;
+      font-size: @headline;
+      color: @brand;
+      line-height: @headline * @lineHeight;
+    }
+  }
 }
 
 
