@@ -1,10 +1,10 @@
-#greenid-wait-modal {
+.greenid-so-modal#greenid-wait-modal {
   background-color: #f1f5fc;
 }
-#greenid-wait-modal .modal-content {
+.greenid-so-modal#greenid-wait-modal .modal-content {
   background-color: inherit;
 }
-#greenid-wait-modal .modal-body {
+.greenid-so-modal#greenid-wait-modal .modal-body {
   color: #799ae0;
   opacity: 0.8;
   font-size: 16;

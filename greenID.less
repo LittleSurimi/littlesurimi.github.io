@@ -33,16 +33,18 @@
 @highOpacity: 0.8;
 
 // Loader Screen
-#greenid-wait-modal {
-  background-color: @light;
-
-  .modal-content{
-    background-color: inherit;
-  }
-  .modal-body{
-    color: @primary;
-    opacity: @highOpacity;
-    font-size: @unit;
-    line-height: @unit * @lineHeight;
+.greenid-so-modal {
+  &#greenid-wait-modal {
+    background-color: @light;
+  
+    .modal-content{
+      background-color: inherit;
+    }
+    .modal-body{
+      color: @primary;
+      opacity: @highOpacity;
+      font-size: @unit;
+      line-height: @unit * @lineHeight;
+    }
   }
 }
