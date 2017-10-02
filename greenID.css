@@ -20,6 +20,11 @@
 .greenid-so-modal#greenid-wait-modal {
   background-color: #f1f5fc;
 }
+.greenid-so-modal#greenid-wait-modal .modal-dialog {
+  display: flex;
+  flex: 1;
+  margin-top: 0;
+}
 .greenid-so-modal#greenid-wait-modal .modal-content {
   background-color: inherit;
   display: flex;
