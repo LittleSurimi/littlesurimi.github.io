@@ -13,7 +13,7 @@
 }
 .greenid-modal #greenid-container .greenid-so-content-nav,
 .greenid-so-content #greenid-container .greenid-so-content-nav {
-  position: absolute;
+  position: fixed;
   top: -2rem;
   left: -2rem;
   padding: 0 1rem;
