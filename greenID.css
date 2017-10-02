@@ -16,6 +16,16 @@
   color: #1b4581;
   line-height: 3rem;
 }
+.greenid-modal #greenid-container p,
+.greenid-so-content #greenid-container p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.greenid-modal #greenid-container strong,
+.greenid-so-content #greenid-container strong {
+  font-family: 'Roboto-Regular';
+  font-weight: 800;
+}
 .greenid-so-modal {
   justify-content: space-between;
 }
