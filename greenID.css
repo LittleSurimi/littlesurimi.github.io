@@ -1,9 +1,10 @@
 .greenid-modal {
   display: flex;
-  flex-direction: 'column';
+  flex: 1;
+  flex-direction: column;
 }
 .greenid-so-modal {
-  justify-content: 'space-between';
+  justify-content: space-between;
 }
 .greenid-so-modal .greenid-loader-container {
   display: flex;
@@ -21,8 +22,14 @@
 }
 .greenid-so-modal#greenid-wait-modal .modal-content {
   background-color: inherit;
+  display: flex;
+  flex: 1;
 }
 .greenid-so-modal#greenid-wait-modal .modal-body {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 2rem;
   color: #799ae0;
   opacity: 0.8;
   font-size: 1rem;

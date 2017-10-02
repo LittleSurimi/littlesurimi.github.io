@@ -38,12 +38,13 @@
 
 .greenid-modal{
   display: flex;
-  flex-direction: 'column';
+  flex: 1;
+  flex-direction: column;
 
 }
 // Loader Screen
 .greenid-so-modal {
-  justify-content: 'space-between';
+  justify-content: space-between;
   // gif used as bg-img
   .greenid-loader-container {
     display: flex;
@@ -62,9 +63,15 @@
   
     .modal-content{
       background-color: inherit;
+      display: flex;
+      flex: 1;
     }
-    // Font Spec
+    // Wrap load text and gif 
     .modal-body{
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      padding: @unit*2;
       color: @primary;
       opacity: @highOpacity;
       font-size: @unit;
