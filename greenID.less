@@ -18,6 +18,7 @@
 
     .greenid-so-content{
       &-nav{
+        display: none;
         position: fixed;
         top: -@unit*2;
         left: -@unit*2;
@@ -28,9 +29,9 @@
       }
       &-dropcap{
         font-family: @font ;
-        //font-size: @headline;
+        font-size: @headline;
         color: @turquoise;
-        //line-height: @headline * @lineHeight;
+        line-height: @headline * @lineHeight;
         font-weight: 200;
 
       }
@@ -39,7 +40,7 @@
       font-size: @unit;
       background-image: none;
       padding: @unit;
-      min-height: 70px;
+      min-height: @unit * 3;
       &-success {
         background-color: rgba(140, 198,63,.1);
         border-color: rgba(140, 198,63,.2);
