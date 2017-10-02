@@ -1,7 +1,14 @@
-.greenid-modal {
+.greenid-modal,
+.greenid-so-content {
   display: flex!important;
   flex: 1!important;
   flex-direction: column!important;
+}
+* h1 {
+  font-family: 'Bitter-Bold';
+  font-size: 2rem;
+  color: #1b4581;
+  line-height: 1.5rem;
 }
 .greenid-so-modal {
   justify-content: space-between;
