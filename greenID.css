@@ -1,3 +1,14 @@
+.greenid-so-modal .greenid-loader-container {
+  display: block;
+  width: 100%;
+  height: 38px;
+  text-align: center;
+  background-image: url(img/loader.gif);
+  background-size: 38px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 10px;
+}
 .greenid-so-modal#greenid-wait-modal {
   background-color: #f1f5fc;
 }

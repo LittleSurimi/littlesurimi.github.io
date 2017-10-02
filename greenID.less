@@ -1,3 +1,6 @@
+// load in http://mockup.edentiti.com/greenid-mobile/
+// https://littlesurimi.github.io/greenID.css
+
 // Colors 
 @red:#FC4349;
 @alert: #FC4349;
@@ -34,12 +37,26 @@
 
 // Loader Screen
 .greenid-so-modal {
+  // gif used as bg-img
+  .greenid-loader-container {
+    display: block;
+    width: 100%;
+    height: 38px;
+    text-align: center;
+    background-image: url(./img/loader.gif);
+    background-size: 38px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 10px;
+  }
+  // Load Screen
   &#greenid-wait-modal {
     background-color: @light;
   
     .modal-content{
       background-color: inherit;
     }
+    // Font Spec
     .modal-body{
       color: @primary;
       opacity: @highOpacity;
