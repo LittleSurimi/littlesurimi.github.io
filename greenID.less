@@ -10,6 +10,7 @@
   flex: 1;
   flex-direction: column;
   padding: @unit*2;
+  margin-bottom: 0;
 
   #greenid-container{
     font-family: @font; 
@@ -27,12 +28,12 @@
         color: @white;
       }
       &-dropcap{
-        font-family: @font ;
+        font-family: @font;
         font-size: @headline;
         color: @turquoise;
         line-height: @headline * @lineHeight;
         font-weight: 100;
-
+        top: -18px
       }
     }
     .greenid-alert{
@@ -67,7 +68,7 @@
       font-size: @unit;
       line-height: @lineHeight;
       padding: 0;
-      margin-bottom: @unit;
+      margin-bottom: @unit*1.5;
       min-height: auto;
       strong {
         font-family: @font; 
@@ -90,6 +91,9 @@
       font-weight: 700;
       margin-top: @unit*2;
       margin-bottom: @unit/ 4;
+    }
+    .btn-link{
+      margin-bottom: 0;
     }
   }
 }
