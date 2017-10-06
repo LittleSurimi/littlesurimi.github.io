@@ -16,6 +16,7 @@
     font-family: @font; 
     color: @base; 
     position: relative;
+    font-size: @unit;
 
     .greenid-so-content{
       &-nav{
@@ -120,6 +121,39 @@
         margin-top:0;
       }
     }
+
+    .form-group{
+      margin-bottom: @unit*1.5;
+      &:first-of-type{
+        margin-top: @unit*1.5;
+      }
+    }
+    
+    input[type='text'],
+    input[type='number'],
+    input[type='date'],
+    input[type='tel'],
+    input[type='email'],
+    input[type='password'],
+    input[type='datetime'],
+    input[type='month']{
+      background: @light;
+      border: 2px solid @white;
+      box-shadow: none;
+      border-radius: 0;
+      -webkit-appearance: none;
+      font-size: @unit;
+      padding: @unit;
+      height: 46px;
+      line-height: 0.7;
+    }
+
+    label{
+      font-size: @caption;
+      font-weight: 700;
+      font-family: @font;
+      color: @base;
+    }
   }
 }
 
@@ -175,6 +209,7 @@
   background-repeat: no-repeat;
   background-position: center;
   #greenid-container{
+    background: transparent;
     h1, p {
       color: @white;
     }
