@@ -158,7 +158,10 @@
       border-left: none;
       background: @light;
       color: @base;
-      .glyphicon
+      .glyphicon{
+        color: @base;
+        opacity: @mediumOpacity;
+      }
     }
     .input-group-addon {
       padding: @unit/2 @unit;
@@ -174,7 +177,7 @@
 
     textarea{
       background: @light;
-      border: 2px solid #D7D7DB;
+      border: 2px solid @white;
       box-shadow: none;
       border-radius: 0;
       -webkit-appearance: none;
