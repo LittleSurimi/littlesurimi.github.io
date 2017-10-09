@@ -16,7 +16,7 @@
     url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-
+/* Icon Set */
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -42,7 +42,6 @@
   font-feature-settings: 'liga';
 }
 
-
 .glyphicon {
   .material-icons;
   &-camera:before{
@@ -55,7 +54,7 @@
     content:'today'
   }
 }
-
+/* END Icon Set */
 
 .greenid-modal,
 .greenid-so-content{
@@ -81,10 +80,10 @@
     .greenid-so-content{
       &-nav{
         position: relative;
-        margin-top: -@unit*2;
+        margin-top: -@unit*4;
         margin-left: -@unit*2;
         padding: 0 @unit;
-        height: @unit*3;
+        height: @unit*5;
         background-color: @turquoise;
         color: @white;
         width: 100vw;
@@ -101,6 +100,8 @@
         top: -18px
       }
     }
+
+    /* Alert messages */
     .greenid-alert{
       font-size: @unit;
       background-image: none;
@@ -121,6 +122,9 @@
         display: none;
       }
     }
+    /* END Alert messages */
+
+    /* Design system */
     h1{
       font-family: @fontAccent ;
       font-size: @headline;
@@ -154,6 +158,8 @@
     a{
       color: @turquoise
     }
+
+    /* DS - Buttons */
     .btn {
       font-family: @font;
       &:hover,
@@ -243,6 +249,7 @@
       }
     }
 
+    /* DS - lists */
     .greenid-so-content-select{
       li {
         margin-bottom: 0
@@ -252,8 +259,13 @@
         text-align: center;
         margin-top:0;
       }
+      &-noicon-dropdown{
+        background: none;
+      }
+
     }
 
+    /* DS - Forms */
     .form-group{
       margin-bottom: @unit*1.5;
       &:first-of-type{
@@ -337,7 +349,7 @@
 }
 
 
-// Loader Screen
+/* Loader Screen */
 .greenid-so-modal {
   justify-content: space-between;
   // gif used as bg-img
@@ -380,9 +392,9 @@
     }
   }
 }
+/* END Loader Screen */
 
-
-// OCR dark theme style
+/* OCR dark theme style */
 #greenid-so-content-ocr-intro{
   background-color: @dark;
   background-image: url(./src/img/passport.png);
@@ -411,6 +423,7 @@
   }
 }
 
+/*  END OCR dark theme style */
 
 // remove later
 #greenid-completelater, 
