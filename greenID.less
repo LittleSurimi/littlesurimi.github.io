@@ -64,13 +64,14 @@
 
     .greenid-so-content{
       &-nav{
-        // position: fixed;
-        // top: -@unit*2;
-        // left: -@unit*2;
+        position: relative;
+        margin-top: -@unit*2;
+        margin-left: -@unit*2;
         padding: 0 @unit;
         height: @unit*3;
         background-color: @turquoise;
         color: @white;
+        width: 100vw;
       }
       &-dropcap{
         font-family: @font;
@@ -141,6 +142,7 @@
       padding: @unit 0;
       position: relative;
       &:before{
+        .material-icons;
         content: 'arrow_backward'
       }
     }
