@@ -273,9 +273,15 @@
       font-weight: 200;
       top: -18px
     }
-    .collapse {
+    .collapse,
+    .collapsing {
       padding: 0;
       margin:0;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-start: 0;
       li {
         margin-top: @unit/4;
         padding: @unit;
@@ -283,7 +289,7 @@
         border-radius: 2px;
         border: none;
         margin-bottom: 0;
-        color: inherit;
+        color: @white;
       }
     }
 
