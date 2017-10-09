@@ -151,6 +151,22 @@
         content: 'arrow_backward'
       }
     }
+    .btn-cancel{
+      .btn-back;
+      &:before{
+        .material-icons;
+        content: 'clear'
+      }
+      &-right{
+        &:before{
+          display: none;
+        }
+        &:after{
+          .material-icons;
+          content: 'clear'
+        }
+      }
+    }
     .btn-primary{
       background-color: @white;
       background-image: none;
