@@ -162,9 +162,13 @@
         background: inherit;
         color: inherit;
       }
-      &:before{
+      &:before, 
+      &:after{
         font-family: 'Material Icons';
         width: @unit*2;
+      }
+      &:after{ 
+        text-align: right
       }
     }
     .btn-back {
@@ -197,6 +201,18 @@
         }
       }
     }
+
+    .btn-complete-later{
+      .btn-back;
+      &:before{
+        display: none;
+      }
+      &:after{
+        .material-icons;
+        content: 'arrow_forward'
+      }
+    }
+
     .btn-primary{
       background-color: @white;
       background-image: none;
