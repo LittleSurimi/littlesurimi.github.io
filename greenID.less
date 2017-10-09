@@ -273,6 +273,9 @@
         color: @base;
         opacity: @mediumOpacity;
       }
+      &:hover {
+        border-color: inherit;
+      }
     }
     .input-group-addon {
       padding: @unit/2 @unit;
@@ -284,6 +287,10 @@
       background-color: rgba(68, 88,120, .2);
       border: 2px solid @white;
       border-radius: 2px;
+      &:hover{
+        background-color: rgba(68, 88,120, .3);
+        border-color: #fff;
+      }
     }
 
     textarea{
