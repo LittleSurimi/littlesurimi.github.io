@@ -44,7 +44,16 @@
 
 
 .glyphicon {
-  .material-icons
+  .material-icons;
+  &-camera:before{
+    content:'camera_alt';
+  }
+  &-remove-circle:before{
+    content:'clear'
+  }
+  &-calendar:before{
+    content:'today'
+  }
 }
 
 
@@ -136,6 +145,9 @@
         font-weight: 700;
         color: @turquoise;
       }
+    }
+    a{
+      color: @turquoise
     }
     .btn {
       font-family: @font;
