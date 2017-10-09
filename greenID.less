@@ -72,6 +72,9 @@
         background-color: @turquoise;
         color: @white;
         width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
       &-dropcap{
         font-family: @font;
@@ -139,7 +142,9 @@
       background-color: transparent;
       background: none;
       font-size: inherit;
-      padding: @unit 0;
+      padding: @unit*.75 @unit;
+      display: flex;
+      align-items: center;
       position: relative;
       &:before{
         .material-icons;
