@@ -253,6 +253,11 @@
       }
       &-noicon-dropdown{
         background: none;
+        .glyphicon {
+          position: absolute;
+          left: @unit;
+          top: @unit;
+        }
       }
     }
     .greenid-so-content-dropcap{
@@ -418,6 +423,11 @@
       color: @white;
       border-color: @white;
       background: @dark
+    }
+    .btn-next:before{
+      content: 'camera';
+      position: absolute;
+      left: @unit;
     }
   }
 }
