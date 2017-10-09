@@ -429,7 +429,6 @@
       background-color: transparent;
     }
     .greenid-so-content-image-container{
-       
       img{
         opacity: 0;
       }
@@ -437,11 +436,17 @@
     .btn-primary {
       color: @white;
       border-color: @white;
-      background: @dark
+      background: @dark;
+      position: relative
     }
     .btn-next:before{
       .material-icons;
       content:'camera_alt';
+      position: absolute;
+      left: @unit;
+    }
+    .greenid-so-content-select-noicon-dropdown .glyphicon:before{
+      content:'help';
       position: absolute;
       left: @unit;
     }
