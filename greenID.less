@@ -130,12 +130,16 @@
       font-family: @font;
       &:before{
         font-family: 'Material Icons';
+        width: @unit*2;
       }
     }
     .btn-back {
       color: inherit;
       background-color: transparent;
       background: none;
+      font-size: inherit;
+      padding: @unit 0;
+      position: relative;
       &:before{
         content: 'arrow_backward'
       }
