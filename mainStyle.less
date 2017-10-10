@@ -500,14 +500,24 @@
       flex: 1;
       padding: 0;
       border: none;
-      &:before{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &:before, 
+      &:after{
         display: none;
+      }
+      button.greenid-modal-close.greenid-x{
+        font-family: 'Material Icons' !important;
+        align-self: flex-end;
+        height: @unit*3;
+        opacity: @highOpacity;
       }
     }
     .modal-title{
       color: @white!important;
       font-size: @unit*2 !important;
-      margin: @unit*2 !important;
+      margin: @unit*4 0 0!important;
       display: flex;
       flex: 1;
       flex-direction: column;
