@@ -39,7 +39,7 @@
 }
 /* END Icon Set */
 
-.greenid-modal,
+.greenid-modal.fade.in,
 .greenid-so-content{
   display: flex;
   flex: 1;
@@ -462,12 +462,38 @@
 
 /*  END OCR dark theme style */
 
+/* Illustration to help take a good selfie  */
 #greenid-so-content-selfie-instructions1,
 #greenid-so-content-selfie-instructions2,
 #greenid-so-content-selfie-instructions3{
   .greenid-so-content-image-container{
     img{
       display: inline;
+    }
+  }
+}
+
+/* Modal Fading */
+.greenid-so .greenid-modal-backdrop-transparent {
+  background-color: @dark;
+  opacity: .9!important;
+}
+.greenid-modal.fade.in{
+  .modal-dialog{
+    margin: @unit*2;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    .modal-dialog {
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      .modal-header {
+        flex: 1;
+      }
     }
   }
 }
