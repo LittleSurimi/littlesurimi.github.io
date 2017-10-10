@@ -1,0 +1,466 @@
+
+/* Icon Set */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: @unit*1.25;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.glyphicon {
+  .material-icons;
+  &-camera:before{
+    content:'camera_alt';
+  }
+  &-remove-circle:before{
+    content:'clear'
+  }
+  &-calendar:before{
+    content:'today'
+  }
+}
+/* END Icon Set */
+
+.greenid-modal,
+.greenid-so-content{
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  #greenid-container{
+    font-family: @font; 
+    color: @base; 
+    position: relative;
+    font-size: @unit;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: @unit*2;
+    padding-top: 0;
+    margin-bottom: 0;
+
+    /*  Navigation */
+
+  .greenid-so-content-nav{
+      margin: 0;
+      margin-left: -@unit*2;
+      padding: 0 @unit;
+      height: @unit*4.25;
+      background-color: @turquoise;
+      color: @white;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .btn{
+        color: inherit;
+        background-color: transparent;
+        background: none;
+        font-size: inherit;
+        padding: @unit;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: @unit;
+        &:before,
+        &:after{
+          .material-icons;
+        }
+      }
+      .btn-back:before{
+          content: 'arrow_backward'
+      }
+      .btn-cancel{
+        &:before{
+          content: 'clear'
+        }
+        &-right{
+          &:before{
+            display: none;
+          }
+          &:after{
+            .material-icons;
+            content: 'clear'
+          }
+        }
+      }
+      .btn-complete-later:after{
+          content: 'arrow_forward'
+      }
+    }
+   
+    /*  END Navigation */
+
+    /* Alert messages */
+    .greenid-alert{
+      font-size: @unit;
+      background-image: none;
+      padding: @unit;
+      min-height: @unit*3;
+      border-width: 2px;
+      &-success {
+        background-color: rgba(140, 198,63,.1);
+        border-color: rgba(140, 198,63,.2);
+        color: @valid;
+      }
+      &-danger {
+        background-color: rgba(252, 67,73,.1);
+        border-color: rgba(252, 67,73,.2);
+        color: @alert;
+      }
+      .glyphicon{
+        display: none;
+      }
+    }
+    /* END Alert messages */
+
+    /* Design system */
+    h1{
+      font-family: @fontAccent ;
+      font-size: @headline;
+      color: @brand;
+      line-height: @headline * @lineHeight;
+      font-weight: 700;
+      margin: @unit*2 0;
+      strong {
+        font-family: @fontAccent;
+      }
+    }
+    ul{
+      padding: @unit 0 @unit @unit*2;
+      margin: 0;
+    }
+
+    p, 
+    li,
+    .greenid-so-content-dropcap-listitem {
+      font-size: @unit;
+      line-height: @lineHeight;
+      padding: 0;
+      margin-bottom: @unit*1.5;
+      min-height: auto;
+      strong {
+        font-family: @font; 
+        font-weight: 700;
+        color: @turquoise;
+      }
+    }
+    a{
+      color: @turquoise
+    }
+
+    /* DS - Buttons */
+    .btn {
+      font-family: @font;
+      &:hover,
+      &:focus{
+        background-color: inherit;
+        background: inherit;
+        color: inherit;
+      }
+      &:before, 
+      &:after{
+        font-family: 'Material Icons';
+        width: @unit*2;
+      }
+      &:after{ 
+        text-align: right
+      }
+    }
+    .btn-primary{
+      background-color: transparent;
+      background-image: none;
+      color: @brand;
+      text-transform: capitalize;
+      padding: @unit;
+      width: 100%;
+      font-size: @unit;
+      border: @border solid @brand;
+      border-radius: @border;
+      font-family: @font; 
+      font-weight: 700;
+      margin-top: @unit*2;
+      margin-bottom: @unit/ 4;
+      &:hover{
+        background-color: transparent;
+        background-image: none;
+      }
+    }
+    .btn-link{
+      margin-bottom: 0;
+      color: @base;
+      opacity: @mediumOpacity;
+      font-weight: 700;
+      font-size: @unit*.875;
+      padding: @unit;
+      &:hover,
+      &:focus{
+        color: inherit;
+        text-decoration: none;
+        opacity: @highOpacity;
+      }
+    }
+
+    /* DS - lists */
+    .greenid-so-content-select{
+      li {
+        margin-bottom: 0
+      }
+      &-item{
+        .btn-primary;
+        text-align: center;
+        margin-top:0;
+      }
+      &-noicon-dropdown{
+        background: none !important;
+        position: relative;
+        &:hover{
+          background: none !important;
+          color: inherit;
+        }
+        .glyphicon {
+          position: absolute;
+          left: 0;
+          top: @unit;
+        }
+      }
+    }
+    .greenid-so-content-dropcap{
+      font-family: @font;
+      font-size: @headline;
+      color: @turquoise;
+      line-height: @headline * @lineHeight;
+      font-weight: 200;
+      top: -18px
+    }
+    .collapse,
+    .collapsing {
+      padding: 0;
+      margin:0;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-start: 0;
+      li {
+        margin-top: @unit/4;
+        padding: @unit;
+        background-color: rgba(255,255,255,.2);
+        border-radius: 2px;
+        border: none;
+        margin-bottom: 0;
+        color: @white;
+      }
+    }
+
+    /* DS - Forms */
+    .form-group{
+      margin-bottom: @unit*1.5;
+      &:first-of-type{
+        margin-top: @unit*1.5;
+      }
+    }
+    
+    input[type='text'],
+    input[type='number'],
+    input[type='date'],
+    input[type='tel'],
+    input[type='email'],
+    input[type='password'],
+    input[type='datetime'],
+    input[type='month']{
+      background: @light;
+      border: 2px solid @white;
+      box-shadow: none;
+      border-radius: 0;
+      color: @base;
+      -webkit-appearance: none;
+      font-size: @unit;
+      padding: @unit;
+      height: 52px;
+      line-height: 0.7;
+    }
+
+    .input-group-btn button {
+      height: 50px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      border-color: @white;
+      border-left: none;
+      background: @light;
+      color: @base;
+      .glyphicon{
+        color: @base;
+        opacity: @mediumOpacity;
+      }
+      &:hover {
+        border-color: inherit;
+      }
+    }
+    .input-group-addon {
+      padding: @unit/2 @unit;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1;
+      color: rgba(68, 88,120, .6);
+      text-align: center;
+      background-color: rgba(68, 88,120, .2);
+      border: 2px solid @white;
+      border-radius: 2px;
+      &:hover{
+        background-color: rgba(68, 88,120, .3);
+        border-color: #fff;
+      }
+    }
+
+    textarea{
+      background: @light;
+      border: 2px solid @white;
+      box-shadow: none;
+      border-radius: 0;
+      -webkit-appearance: none;
+      font-size: @unit;
+      padding: @unit;
+      padding-top: @unit*.625;
+      min-height: 52px;
+      line-height: 1.3;
+    }
+
+    label{
+      font-size: @caption;
+      font-weight: 700;
+      font-family: @font;
+      color: @base;
+    }
+  }
+}
+
+
+/* Loader Screen */
+.greenid-so-modal {
+  justify-content: space-between;
+  // gif used as bg-img
+  .greenid-loader-container {
+    display: flex;
+    width: 100%;
+    height:40px;
+    text-align: center;
+    background-image: url(./src/img/loader.gif);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: @unit/2;
+  }
+  // Load Screen
+  &#greenid-wait-modal {
+    background-color: @light;
+    .modal-dialog{
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin-top: 0;
+    }
+    .modal-content{
+      background-color: inherit;
+      display: flex;
+      flex: 1;
+    }
+    // Wrap load text and gif 
+    .modal-body{
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      padding: @unit*2;
+      color: @primary;
+      opacity: @highOpacity;
+      font-size: @unit;
+      line-height: @unit * @lineHeight;
+    }
+  }
+}
+/* END Loader Screen */
+
+/* OCR dark theme style */
+#greenid-so-content-ocr-intro{
+  background-color: @dark;
+  background-image: url(./src/img/passport.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center @unit *20;
+  #greenid-container{
+    background: transparent;
+    h1, p {
+      color: @white;
+    }
+    .greenid-so-content-nav{
+      background-color: transparent;
+    }
+    .greenid-so-content-image-container{
+      img{
+        opacity: 0;
+      }
+    }
+    .btn-primary,
+    .greenid-so-content-select-noicon-dropdown {
+      color: @white;
+      border-color: @white;
+      background: @dark;
+      position: relative
+    }
+    .greenid-so-content-select-noicon-dropdown + .btn-next{
+      margin-top: 0;
+    }
+    .collapse.in + .btn-next {
+      margin-top: @unit*2;
+    }
+    .btn-next:before{
+      .material-icons;
+      content:'camera_alt';
+      position: absolute;
+      left: @unit;
+    }
+    .greenid-so-content-select-noicon-dropdown .glyphicon:before{
+      content:'help';
+      position: absolute;
+      left: @unit;
+    }
+  }
+}
+
+/*  END OCR dark theme style */
+
+// remove later
+#greenid-completelater, 
+#greenid-source-help , 
+#greenid-so-btn-cancel-modal{
+  display: none !important
+}
+hr{
+  margin: 0;
+}
