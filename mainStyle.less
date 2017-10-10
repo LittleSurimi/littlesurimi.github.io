@@ -531,6 +531,16 @@
       flex: 1;
       flex-direction: column;
       justify-content: flex-end;
+      button {
+        margin: 0 0 @unit/4 0;
+        border: 2px solid @white;
+        text-transform: capitalize !important;
+        text-align: center;
+      }
+      .btn:not(:last-of-type){
+        background: @white;
+        color: @brand;
+      }
     }
   }
 }
