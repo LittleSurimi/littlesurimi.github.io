@@ -62,6 +62,14 @@
     padding-top: 0;
     margin-bottom: 0;
 
+    // Illustrations
+    .greenid-so-content-image-container{
+      height: 200px;
+      margin: @unit 0;
+      img{
+        display: none;
+      }
+    }
     /*  Navigation */
 
   .greenid-so-content-nav{
@@ -406,13 +414,11 @@
 }
 /* END Loader Screen */
 
+
+
 /* OCR dark theme style */
 #greenid-so-content-ocr-intro{
   background-color: @dark;
-  background-image: url(./src/img/passport.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center @unit *20;
   #greenid-container{
     background: transparent;
     h1, p {
@@ -422,9 +428,10 @@
       background-color: transparent;
     }
     .greenid-so-content-image-container{
-      img{
-        opacity: 0;
-      }
+      height: 200px;
+      background-image: url(./src/img/passport.png);
+      background-size: contain;
+      background-repeat: no-repeat;
     }
     .btn-primary,
     .greenid-so-content-select-noicon-dropdown {
@@ -454,6 +461,16 @@
 }
 
 /*  END OCR dark theme style */
+
+#greenid-so-content-selfie-instructions1,
+#greenid-so-content-selfie-instructions2,
+#greenid-so-content-selfie-instructions3{
+  .greenid-so-content-image-container{
+    img{
+      display: inline;
+    }
+  }
+}
 
 // remove later
 #greenid-completelater, 
