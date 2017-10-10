@@ -477,7 +477,7 @@
 /* Modal Fading */
 .greenid-so .greenid-modal-backdrop-transparent {
   background-color: @dark;
-  opacity: .9!important;
+  opacity: .95!important;
 }
 .greenid-modal.fade.in{
   .modal-dialog{
@@ -497,15 +497,27 @@
       flex: 1;
       padding: 0;
       border: none;
+      &:before{
+        display: none;
+      }
     }
     .modal-title{
       color: @white;
-      font-size: @unit !important;
+      font-size: @unit*2 !important;
+      margin: @unit*2 !important;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .modal-footer {
       flex: 1;
       padding: 0;
       border: none;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: flex-end;
     }
   }
 }
