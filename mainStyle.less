@@ -314,9 +314,9 @@
     input[type='datetime'],
     input[type='month']{
       background: @light;
-      border: 2px solid @white;
+      border: @border solid @white;
       box-shadow: none;
-      border-radius: 0;
+      border-radius: @unit/4;
       color: @base;
       -webkit-appearance: none;
       font-size: @unit;
@@ -326,10 +326,11 @@
     }
 
     .input-group-btn button {
-      height: 50px;
+      height: 52px;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
-      border-radius: 2px;
+      border-radius: @unit/4;
+      border-width: @border;
       border-color: @white;
       border-left: none;
       background: @light;
@@ -352,7 +353,7 @@
       color: rgba(68, 88,120, .6);
       text-align: center;
       background-color: rgba(68, 88,120, .2);
-      border: 2px solid @white;
+      border: @border solid @white;
       border-radius: 2px;
       &:hover{
         background-color: rgba(68, 88,120, .3);
@@ -596,7 +597,7 @@ hr{
   box-shadow: 0;
 }
 #greenid-container .has-success .form-control:focus {
-  border-color: darken(@valid, 10%);
+  border-color: @valid;
   -webkit-box-shadow: 0;
   box-shadow: 0;
 }
@@ -629,7 +630,7 @@ hr{
 #greenid-container .has-warning .input-group-addon {
   color: @orange;
   border-color: @orange;
-  background-color: lighten(@orange,80%);
+  background-color: lighten(@orange,30%);
 }
 #greenid-container .has-warning .form-control-feedback {
   color: @orange;
@@ -655,7 +656,7 @@ hr{
 #greenid-container .greenid-has-error .input-group-addon {
   color:@alert;
   border-color: @alert;
-  background-color: lighten(@alert, 80%);
+  background-color: lighten(@alert, 33%);
 }
 #greenid-container .greenid-has-error .form-control-feedback {
   color: @alert;
@@ -666,10 +667,12 @@ hr{
 .greenid-so-content #greenid-container .greenid-has-error input[type='date'],
 .greenid-so-content #greenid-container .greenid-has-error textarea {
   border-color: @alert;
+  background-color: lighten(@alert, 33%)
 }
 .greenid-so-content #greenid-container .greenid-has-error [data-action='greenid-clear-field'],
 .greenid-so-content #greenid-container .greenid-has-error [data-action='greenid-clear-field']:hover {
-  border: 2px solid @alert;
+  border: @border solid @alert;
   border-left: none;
+  color: @alert;
 }
 
