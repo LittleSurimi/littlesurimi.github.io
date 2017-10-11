@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "lessc ./greenID.less --no-ie-compat --clean-css > ./greenID.css && lessc ./greenID.fontEmbedded.less --no-ie-compat --clean-css > ./greenID.fontEmbedded.css"
+    "build": "lessc ./greenID.ios.less --no-ie-compat --clean-css > ./greenID.ios.css && lessc ./greenID.android.less --no-ie-compat --clean-css > ./greenID.android..css"
   },
   "devDependencies": {
     "less": "^2.7.2",
