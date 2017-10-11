@@ -166,7 +166,7 @@
             .input-group-addon {
                 color: @valid ;
                 border-color: @valid ;
-                background-color: lighten(@valid , 35%);
+                background-color: lighten(@valid , 38%);
             }
             .form-control-feedback {
                 color: @valid ;
@@ -176,7 +176,7 @@
             input[type='date'],
             textarea {
                 border-color: @valid ;
-                background-color: lighten(@valid , 35%);
+                background-color: lighten(@valid , 38%);
                 * {
                     color: @valid ;
                 }
@@ -185,12 +185,21 @@
             [data-action='greenid-clear-field']:hover {
                 border: @border solid @valid ;
                 border-left: none;
-                background-color: lighten(@valid , 35%);
+                background-color: lighten(@valid , 38%);
             }
             .greenid-datepicker {
                 border-left: none;
                 background-color: rgba(140, 198, 63, 0.2);
                 border-radius: 0 4px 4px 0;
+            }
+            .date .greenid-datepicker {
+              border-left: 0;
+              border-radius: 0 4px 4px 0;
+            }
+            .date [data-action='greenid-clear-field'],
+            .date [data-action='greenid-clear-field']:hover {
+              border-radius: 0;
+              border-right: none
             }
         }
         .has-warning {
@@ -242,6 +251,15 @@
                 background-color: rgba(235, 160, 76, 0.2);
                 border-radius: 0 4px 4px 0;
             }
+            .date .greenid-datepicker {
+              border-left: 0;
+              border-radius: 0 4px 4px 0;
+            }
+            .date [data-action='greenid-clear-field'],
+            .date [data-action='greenid-clear-field']:hover {
+              border-radius: 0;
+              border-right: none
+            }
         }
         .greenid-has-error {
             .help-block,
@@ -292,6 +310,16 @@
                 background-color: rgba(253, 68, 74, 0.2);
                 border-radius: 0 4px 4px 0;
             }
+            .date .greenid-datepicker {
+              border-left: 0;
+              border-radius: 0 4px 4px 0;
+            }
+            .date [data-action='greenid-clear-field'],
+            .date [data-action='greenid-clear-field']:hover {
+              border-radius: 0;
+              border-right: none
+            }
+
         }
         /* END Alert messages */
         /* Design system */
