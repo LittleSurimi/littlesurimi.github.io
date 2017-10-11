@@ -235,12 +235,21 @@
       }
     }
 
+    .alert-dismissable .close,
+    .alert-dismissible .close {
+      position: relative;
+      top: 0;
+      right: 0;
+      color: inherit;
+    }
+
     /* DS - lists */
     .greenid-so-content-select{
       li {
         margin-bottom: 0
       }
-      &-item{
+      &-item,
+      &-item:hover{
         .btn-primary;
         text-align: center;
         margin-top:0;
@@ -254,7 +263,7 @@
         }
         .glyphicon {
           position: absolute;
-          left: 0;
+          left: @unit;
           top: @unit;
         }
       }
