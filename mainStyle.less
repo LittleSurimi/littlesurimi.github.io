@@ -142,185 +142,6 @@
                 display: none;
             }
         }
-        /* Color Scheme */
-        .has-success {
-            .help-block,
-            .control-label,
-            .radio,
-            .checkbox,
-            .radio-inline,
-            .checkbox-inline,
-            .glyphicon:before {
-                color: @valid ;
-            }
-            .form-control {
-                border-color: @valid ;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-            }
-            .form-control:focus {
-                border-color: @valid ;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-            }
-            .input-group-addon {
-                color: @valid ;
-                border-color: @valid ;
-                background-color: lighten(@valid , 38%);
-            }
-            .form-control-feedback {
-                color: @valid ;
-            }
-            input[type='text'],
-            input[type='number'],
-            input[type='date'],
-            textarea {
-                border-color: @valid ;
-                background-color: lighten(@valid , 38%);
-                * {
-                    color: @valid ;
-                }
-            }
-            [data-action='greenid-clear-field'],
-            [data-action='greenid-clear-field']:hover {
-                border: @border solid @valid ;
-                border-left: none;
-                background-color: lighten(@valid , 38%);
-            }
-            .greenid-datepicker {
-                border-left: none;
-                background-color: rgba(140, 198, 63, 0.2);
-                border-radius: 0 4px 4px 0;
-            }
-            .date .greenid-datepicker {
-              border-left: 0;
-              border-radius: 0 4px 4px 0;
-            }
-            .date [data-action='greenid-clear-field'],
-            .date [data-action='greenid-clear-field']:hover {
-              border-radius: 0;
-              border-right: none
-            }
-        }
-        .has-warning {
-            .help-block,
-            .control-label,
-            .radio,
-            .checkbox,
-            .radio-inline,
-            .checkbox-inline,
-            .glyphicon:before {
-                color: @orange ;
-            }
-            .form-control {
-                border-color: @orange ;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-            }
-            .form-control:focus {
-                border-color: @orange ;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-            }
-            .input-group-addon {
-                color: @orange ;
-                border-color: @orange ;
-                background-color: lighten(@orange , 30%);
-            }
-            .form-control-feedback {
-                color: @orange ;
-            }
-            input[type='text'],
-            input[type='number'],
-            input[type='date'],
-            textarea {
-                border-color: @orange ;
-                background-color: lighten(@orange , 33%);
-                * {
-                    color: @orange ;
-                }
-            }
-            [data-action='greenid-clear-field'],
-            [data-action='greenid-clear-field']:hover {
-                border: @border solid @orange ;
-                border-left: none;
-                background-color: lighten(@orange , 30%);
-            }
-            .greenid-datepicker {
-                border-left: none;
-                background-color: rgba(235, 160, 76, 0.2);
-                border-radius: 0 4px 4px 0;
-            }
-            .date .greenid-datepicker {
-              border-left: 0;
-              border-radius: 0 4px 4px 0;
-            }
-            .date [data-action='greenid-clear-field'],
-            .date [data-action='greenid-clear-field']:hover {
-              border-radius: 0;
-              border-right: none
-            }
-        }
-        .greenid-has-error {
-            .help-block,
-            .control-label,
-            .radio,
-            .checkbox,
-            .radio-inline,
-            .checkbox-inline,
-            .glyphicon:before {
-                color: @alert;
-            }
-            .form-control {
-                border-color: @alert;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-            }
-            .form-control:focus {
-                border-color: @alert;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-            }
-            .input-group-addon {
-                color: @alert;
-                border-color: @alert;
-                background-color: lighten(@alert, 33%);
-            }
-            .form-control-feedback {
-                color: @alert;
-            }
-            input[type='text'],
-            input[type='number'],
-            input[type='date'],
-            textarea {
-                border-color: @alert;
-                background-color: lighten(@alert, 33%);
-                * {
-                    color: @alert;
-                }
-            }
-            [data-action='greenid-clear-field'],
-            [data-action='greenid-clear-field']:hover {
-                border: @border solid @alert;
-                border-left: none;
-                background-color: lighten(@alert, 33%);
-            }
-            .greenid-datepicker {
-                border-left: none;
-                background-color: rgba(253, 68, 74, 0.2);
-                border-radius: 0 4px 4px 0;
-            }
-            .date .greenid-datepicker {
-              border-left: 0;
-              border-radius: 0 4px 4px 0;
-            }
-            .date [data-action='greenid-clear-field'],
-            .date [data-action='greenid-clear-field']:hover {
-              border-radius: 0;
-              border-right: none
-            }
-
-        }
         /* END Alert messages */
         /* Design system */
         h1,
@@ -527,10 +348,6 @@
             background-color: rgba(68, 88, 120, .2);
             border: @border solid @white;
             border-radius: 2px;
-            &:hover {
-                background-color: rgba(68, 88, 120, .3);
-                border-color: #fff;
-            }
         }
         textarea {
             background: @light;
@@ -549,6 +366,183 @@
             font-weight: 700;
             font-family: @font;
             color: @base;
+        }
+        .has-success {
+            .help-block,
+            .control-label,
+            .radio,
+            .checkbox,
+            .radio-inline,
+            .checkbox-inline,
+            .glyphicon:before {
+                color: @valid ;
+            }
+            .form-control {
+                border-color: @valid ;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            .form-control:focus {
+                border-color: @valid ;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            .input-group-addon {
+                color: @valid ;
+                border-color: @valid ;
+                background-color: lighten(@valid , 42%);
+            }
+            .form-control-feedback {
+                color: @valid ;
+            }
+            input[type='text'],
+            input[type='number'],
+            input[type='date'],
+            textarea {
+                border-color: @valid ;
+                background-color: lighten(@valid , 42%);
+                * {
+                    color: @valid ;
+                }
+            }
+            [data-action='greenid-clear-field'],
+            [data-action='greenid-clear-field']:hover {
+                border: @border solid @valid ;
+                border-left: none;
+                background-color: lighten(@valid , 42%);
+            }
+            .greenid-datepicker {
+                border-left: none;
+                background-color: rgba(140, 198, 63, 0.2);
+                border-radius: 0 4px 4px 0;
+            }
+            .date .greenid-datepicker {
+                border-left: 0;
+                border-radius: 0 4px 4px 0;
+            }
+            .date [data-action='greenid-clear-field'],
+            .date [data-action='greenid-clear-field']:hover {
+                border-radius: 0;
+                border-right: none
+            }
+        }
+        .has-warning {
+            .help-block,
+            .control-label,
+            .radio,
+            .checkbox,
+            .radio-inline,
+            .checkbox-inline,
+            .glyphicon:before {
+                color: @orange ;
+            }
+            .form-control {
+                border-color: @orange ;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            .form-control:focus {
+                border-color: @orange ;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            .input-group-addon {
+                color: @orange ;
+                border-color: @orange ;
+                background-color: lighten(@orange , 30%);
+            }
+            .form-control-feedback {
+                color: @orange ;
+            }
+            input[type='text'],
+            input[type='number'],
+            input[type='date'],
+            textarea {
+                border-color: @orange ;
+                background-color: lighten(@orange , 33%);
+                * {
+                    color: @orange ;
+                }
+            }
+            [data-action='greenid-clear-field'],
+            [data-action='greenid-clear-field']:hover {
+                border: @border solid @orange ;
+                border-left: none;
+                background-color: lighten(@orange , 30%);
+            }
+            .greenid-datepicker {
+                border-left: none;
+                background-color: rgba(235, 160, 76, 0.2);
+                border-radius: 0 4px 4px 0;
+            }
+            .date .greenid-datepicker {
+                border-left: 0;
+                border-radius: 0 4px 4px 0;
+            }
+            .date [data-action='greenid-clear-field'],
+            .date [data-action='greenid-clear-field']:hover {
+                border-radius: 0;
+                border-right: none
+            }
+        }
+        .greenid-has-error {
+            .help-block,
+            .control-label,
+            .radio,
+            .checkbox,
+            .radio-inline,
+            .checkbox-inline,
+            .glyphicon:before {
+                color: @alert;
+            }
+            .form-control {
+                border-color: @alert;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            .form-control:focus {
+                border-color: @alert;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            .input-group-addon {
+                color: @alert;
+                border-color: @alert;
+                background-color: lighten(@alert, 33%);
+            }
+            .form-control-feedback {
+                color: @alert;
+            }
+            input[type='text'],
+            input[type='number'],
+            input[type='date'],
+            textarea {
+                border-color: @alert;
+                background-color: lighten(@alert, 33%);
+                * {
+                    color: @alert;
+                }
+            }
+            [data-action='greenid-clear-field'],
+            [data-action='greenid-clear-field']:hover {
+                border: @border solid @alert;
+                border-left: none;
+                background-color: lighten(@alert, 33%);
+            }
+            .greenid-datepicker {
+                border-left: none;
+                background-color: rgba(253, 68, 74, 0.2);
+                border-radius: 0 4px 4px 0;
+            }
+            .date .greenid-datepicker {
+                border-left: 0;
+                border-radius: 0 4px 4px 0;
+            }
+            .date [data-action='greenid-clear-field'],
+            .date [data-action='greenid-clear-field']:hover {
+                border-radius: 0;
+                border-right: none
+            }
         }
     }
 }
@@ -674,7 +668,7 @@
 
 .greenid-modal {
     .modal-dialog {
-        margin: @unit*2;
+        margin: @unit @unit*2 @unit*2 @unit*2;
         display: flex;
         flex: 1;
         flex-direction: column;
