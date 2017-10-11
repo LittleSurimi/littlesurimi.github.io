@@ -479,6 +479,7 @@
 #greenid-so-content-selfie-instructions2,
 #greenid-so-content-selfie-instructions3{
   .greenid-so-content-image-container{
+    margin-bottom: @unit*3;
     img{
       display: inline !important;
     }
@@ -626,7 +627,7 @@ hr{
 #greenid-container .has-warning .input-group-addon {
   color: @orange;
   border-color: @orange;
-  background-color: @light;
+  background-color: lighten(@orange,80%);
 }
 #greenid-container .has-warning .form-control-feedback {
   color: @orange;
@@ -652,8 +653,19 @@ hr{
 #greenid-container .greenid-has-error .input-group-addon {
   color:@alert;
   border-color: @alert;
-  background-color: @light;
+  background-color: lighten(@alert, 80%);
 }
 #greenid-container .greenid-has-error .form-control-feedback {
   color: @alert;
+}
+
+.greenid-so-content #greenid-container .greenid-has-error input[type='text'],
+.greenid-so-content #greenid-container .greenid-has-error input[type='number'],
+.greenid-so-content #greenid-container .greenid-has-error input[type='date'],
+.greenid-so-content #greenid-container .greenid-has-error textarea {
+  border-color: @alert;
+}
+.greenid-so-content #greenid-container .greenid-has-error [data-action='greenid-clear-field'],
+.greenid-so-content #greenid-container .greenid-has-error [data-action='greenid-clear-field']:hover {
+  border: 2px solid @white;
 }
