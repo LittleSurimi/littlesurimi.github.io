@@ -329,7 +329,7 @@
       height: 50px;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
-      border-radius: 0;
+      border-radius: 2px;
       border-color: @white;
       border-left: none;
       background: @light;
@@ -338,8 +338,10 @@
         color: @base;
         opacity: @mediumOpacity;
       }
-      &:hover {
-        border-color: inherit;
+      &:hover, &:focus, &:visited, &:active {
+        border-color: @white;
+        color: inherit;
+        background: @light;
       }
     }
     .input-group-addon {
@@ -479,7 +481,7 @@
 #greenid-so-content-selfie-instructions2,
 #greenid-so-content-selfie-instructions3{
   .greenid-so-content-image-container{
-    margin-bottom: @unit*3;
+    margin-bottom: @unit*3 !important;
     img{
       display: inline !important;
     }
@@ -667,5 +669,7 @@ hr{
 }
 .greenid-so-content #greenid-container .greenid-has-error [data-action='greenid-clear-field'],
 .greenid-so-content #greenid-container .greenid-has-error [data-action='greenid-clear-field']:hover {
-  border: 2px solid @white;
+  border: 2px solid @alert;
+  border-left: none;
 }
+
