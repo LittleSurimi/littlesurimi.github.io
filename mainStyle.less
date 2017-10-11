@@ -440,7 +440,7 @@
       color: @white;
       border-color: @white;
       background: @dark;
-      position: relative
+      position: relative;
     }
     .greenid-so-content-select-noicon-dropdown + .btn-next{
       margin-top: 0;
@@ -470,7 +470,7 @@
 #greenid-so-content-selfie-instructions3{
   .greenid-so-content-image-container{
     img{
-      display: inline;
+      display: inline !important;
     }
   }
 }
@@ -562,4 +562,88 @@
 }
 hr{
   margin: 0;
+}
+
+
+
+
+/* Color Scheme */
+
+#greenid-container .has-success .help-block,
+#greenid-container .has-success .control-label,
+#greenid-container .has-success .radio,
+#greenid-container .has-success .checkbox,
+#greenid-container .has-success .radio-inline,
+#greenid-container .has-success .checkbox-inline {
+  color: @valid;
+}
+#greenid-container .has-success .form-control {
+  border-color: @valid;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+}
+#greenid-container .has-success .form-control:focus {
+  border-color: darken(@valid, 10%);
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+}
+#greenid-container .has-success .input-group-addon {
+  color: @valid;
+  border-color: @valid;
+  background-color:@light;
+}
+#greenid-container .has-success .form-control-feedback {
+  color: @valid;
+}
+#greenid-container .has-warning .help-block,
+#greenid-container .has-warning .control-label,
+#greenid-container .has-warning .radio,
+#greenid-container .has-warning .checkbox,
+#greenid-container .has-warning .radio-inline,
+#greenid-container .has-warning .checkbox-inline {
+  color: @orange;
+}
+#greenid-container .has-warning .form-control {
+  border-color: @orange;
+  -webkit-box-shadow: none;
+  box-shadow:none;
+}
+#greenid-container .has-warning .form-control:focus {
+  border-color: @orange;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+#greenid-container .has-warning .input-group-addon {
+  color: @orange;
+  border-color: @orange;
+  background-color: @light;
+}
+#greenid-container .has-warning .form-control-feedback {
+  color: @orange;
+}
+#greenid-container .greenid-has-error .help-block,
+#greenid-container .greenid-has-error .control-label,
+#greenid-container .greenid-has-error .radio,
+#greenid-container .greenid-has-error .checkbox,
+#greenid-container .greenid-has-error .radio-inline,
+#greenid-container .greenid-has-error .checkbox-inline {
+  color: @alert;
+}
+#greenid-container .greenid-has-error .form-control {
+  border-color: @alert;
+  -webkit-box-shadow: none;
+  box-shadow:none ;
+}
+#greenid-container .greenid-has-error .form-control:focus {
+  border-color: @alert;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#greenid-container .greenid-has-error .input-group-addon {
+  color:@alert;
+  border-color: @alert;
+  background-color: @light;
+}
+#greenid-container .greenid-has-error .form-control-feedback {
+  color: @alert;
 }
