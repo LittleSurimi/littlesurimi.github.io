@@ -667,12 +667,15 @@ hr{
 .greenid-so-content #greenid-container .greenid-has-error input[type='date'],
 .greenid-so-content #greenid-container .greenid-has-error textarea {
   border-color: @alert;
-  background-color: lighten(@alert, 33%)
+  background-color: lighten(@alert, 33%);
+  *{
+    color: @alert;
+  }
 }
 .greenid-so-content #greenid-container .greenid-has-error [data-action='greenid-clear-field'],
 .greenid-so-content #greenid-container .greenid-has-error [data-action='greenid-clear-field']:hover {
   border: @border solid @alert;
   border-left: none;
-  color: @alert;
+  background-color: lighten(@alert, 33%);
 }
 
