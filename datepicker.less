@@ -1,0 +1,1668 @@
+
+
+@color_3: #ffdb99;
+@color_5: #f7ca77;
+@background_color_1: transparent;
+@background_color_2: #ffdb99;
+@background_color_3: #ffc966;
+@background_color_5: #f7ca77;
+@border_bottom_color_1: rgba(0, 0, 0, 0.2);
+
+/*!
+ * Datepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Improvements by Andrew Rowls
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+.greenid-datepicker-container.datepicker {
+	padding: 4px;
+	border-radius: 4px;
+	direction: ltr;
+	>div {
+		display: none;
+	}
+	table {
+		margin: 0;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		tr {
+			td {
+				text-align: center;
+				width: 30px;
+				height: 30px;
+				border-radius: 4px;
+				border: none;
+				span {
+					display: block;
+					width: 23%;
+					height: 54px;
+					line-height: 54px;
+					float: left;
+					margin: 1%;
+					cursor: pointer;
+					border-radius: 4px;
+					&:hover {
+						background: @light;
+					}
+				}
+				span.disabled {
+					background: none;
+					color: lighten(@base, 30%);
+					cursor: default;
+					&:hover {
+						background: none;
+						color: lighten(@base, 30%);
+						cursor: default;
+					}
+				}
+				span.active {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+					&:hover {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						&:hover {
+							color: @white;
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:focus {
+							color: @white;
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:active {
+							color: @white;
+							background-color: @valid;
+							border-color: @valid;
+							background-image: none;
+						}
+						.badge {
+							color: @valid;
+							background-color: @white;
+						}
+					}
+					&:focus {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						background-image: none;
+					}
+					&:hover.active {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						background-image: none;
+					}
+					&:hover.disabled {
+						background-color: @valid;
+						border-color: @valid;
+						&:hover {
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:focus {
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:active {
+							background-color: @valid;
+							border-color: @valid;
+						}
+					}
+					&:hover[disabled] {
+						background-color: @valid;
+						border-color: @valid;
+						&:hover {
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:focus {
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:active {
+							background-color: @valid;
+							border-color: @valid;
+						}
+					}
+					&:hover.disabled.active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:hover[disabled].active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					.badge {
+						color: @valid;
+						background-color: @white;
+					}
+				}
+				span.active.disabled {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+					background-color: @valid;
+					border-color: @valid;
+					&:hover {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						background-color: @valid;
+						border-color: @valid;
+						&:hover {
+							color: @white;
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:focus {
+							color: @white;
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:active {
+							color: @white;
+							background-color: @valid;
+							border-color: @valid;
+							background-image: none;
+						}
+						.badge {
+							color: @valid;
+							background-color: @white;
+						}
+					}
+					&:focus {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						background-image: none;
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:hover.active {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						background-image: none;
+					}
+					&:hover.disabled {
+						background-color: @valid;
+						border-color: @valid;
+						&:hover {
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:focus {
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:active {
+							background-color: @valid;
+							border-color: @valid;
+						}
+					}
+					&:hover[disabled] {
+						background-color: @valid;
+						border-color: @valid;
+						&:hover {
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:focus {
+							background-color: @valid;
+							border-color: @valid;
+						}
+						&:active {
+							background-color: @valid;
+							border-color: @valid;
+						}
+					}
+					&:hover.disabled.active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:hover[disabled].active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					.badge {
+						color: @valid;
+						background-color: @white;
+					}
+				}
+				span.active.active {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					background-image: none;
+				}
+				span.active.disabled.active {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					background-image: none;
+					background-color: @valid;
+					border-color: @valid;
+				}
+				span.active.disabled.disabled {
+					background-color: @valid;
+					border-color: @valid;
+					&:hover {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:focus {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+				}
+				span.active[disabled] {
+					background-color: @valid;
+					border-color: @valid;
+					&:hover {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:focus {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+				}
+				span.active.disabled[disabled] {
+					background-color: @valid;
+					border-color: @valid;
+					&:hover {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:focus {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+				}
+				span.active.disabled.disabled.active {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				span.active[disabled].active {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				span.active.disabled[disabled].active {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				span.old {
+					color: lighten(@base, 30%);
+				}
+				span.new {
+					color: lighten(@base, 30%);
+				}
+			}
+			th {
+				text-align: center;
+				width: 30px;
+				height: 30px;
+				border-radius: 4px;
+				border: none;
+			}
+			td.day {
+				&:hover {
+					background: @light;
+					cursor: pointer;
+				}
+			}
+			td.day.focused {
+				background: @light;
+				cursor: pointer;
+			}
+			td.old {
+				color: lighten(@base, 30%);
+			}
+			td.new {
+				color: lighten(@base, 30%);
+			}
+			td.disabled {
+				background: none;
+				color: lighten(@base, 30%);
+				cursor: default;
+				&:hover {
+					background: none;
+					color: lighten(@base, 30%);
+					cursor: default;
+				}
+			}
+			td.today {
+				color: @dark;
+				background-color: @background_color_2;
+				border-color: @orange;
+				&:hover {
+					color: @dark;
+					background-color: @background_color_2;
+					border-color: @orange;
+					color: @dark;
+					background-color: @background_color_3;
+					border-color: @orange;
+					&:hover {
+						color: @dark;
+						background-color: @background_color_3;
+						border-color: @orange;
+						color: @dark;
+					}
+					&:focus {
+						color: @dark;
+						background-color: @background_color_3;
+						border-color: @orange;
+					}
+					&:active {
+						color: @dark;
+						background-color: @background_color_3;
+						border-color: @orange;
+						background-image: none;
+					}
+					.badge {
+						color: @color_3;
+						background-color: @dark;
+					}
+				}
+				&:focus {
+					color: @dark;
+					background-color: @background_color_3;
+					border-color: @orange;
+				}
+				&:active {
+					color: @dark;
+					background-color: @background_color_3;
+					border-color: @orange;
+					background-image: none;
+				}
+				&:hover.active {
+					color: @dark;
+					background-color: @background_color_3;
+					border-color: @orange;
+					background-image: none;
+				}
+				&:hover.disabled {
+					background-color: @background_color_2;
+					border-color: @orange;
+					&:hover {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+					&:focus {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+					&:active {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+				}
+				&:hover[disabled] {
+					background-color: @background_color_2;
+					border-color: @orange;
+					&:hover {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+					&:focus {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+					&:active {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+				}
+				&:hover.disabled.active {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				&:hover[disabled].active {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				.badge {
+					color: @color_3;
+					background-color: @dark;
+				}
+			}
+			td.today.disabled {
+				color: @dark;
+				background-color: @background_color_2;
+				border-color: @orange;
+				background-color: @background_color_2;
+				border-color: @orange;
+				&:hover {
+					color: @dark;
+					background-color: @background_color_2;
+					border-color: @orange;
+					color: @dark;
+					background-color: @background_color_3;
+					border-color: @orange;
+					background-color: @background_color_2;
+					border-color: @orange;
+					&:hover {
+						color: @dark;
+						background-color: @background_color_3;
+						border-color: @orange;
+					}
+					&:focus {
+						color: @dark;
+						background-color: @background_color_3;
+						border-color: @orange;
+					}
+					&:active {
+						color: @dark;
+						background-color: @background_color_3;
+						border-color: @orange;
+						background-image: none;
+					}
+					.badge {
+						color: @color_3;
+						background-color: @dark;
+					}
+				}
+				&:focus {
+					color: @dark;
+					background-color: @background_color_3;
+					border-color: @orange;
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				&:active {
+					color: @dark;
+					background-color: @background_color_3;
+					border-color: @orange;
+					background-image: none;
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				&:hover.active {
+					color: @dark;
+					background-color: @background_color_3;
+					border-color: @orange;
+					background-image: none;
+				}
+				&:hover.disabled {
+					background-color: @background_color_2;
+					border-color: @orange;
+					&:hover {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+					&:focus {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+					&:active {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+				}
+				&:hover[disabled] {
+					background-color: @background_color_2;
+					border-color: @orange;
+					&:hover {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+					&:focus {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+					&:active {
+						background-color: @background_color_2;
+						border-color: @orange;
+					}
+				}
+				&:hover.disabled.active {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				&:hover[disabled].active {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				.badge {
+					color: @color_3;
+					background-color: @dark;
+				}
+			}
+			td.today.active {
+				color: @dark;
+				background-color: @background_color_3;
+				border-color: @orange;
+				background-image: none;
+				&:hover {
+					color: @white;
+				}
+			}
+			td.today.disabled.active {
+				color: @dark;
+				background-color: @background_color_3;
+				border-color: @orange;
+				background-image: none;
+				background-color: @background_color_2;
+				border-color: @orange;
+			}
+			td.today.disabled.disabled {
+				background-color: @background_color_2;
+				border-color: @orange;
+				&:hover {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				&:focus {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				&:active {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+			}
+			td.today[disabled] {
+				background-color: @background_color_2;
+				border-color: @orange;
+				&:hover {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				&:focus {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				&:active {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+			}
+			td.today.disabled[disabled] {
+				background-color: @background_color_2;
+				border-color: @orange;
+				&:hover {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				&:focus {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+				&:active {
+					background-color: @background_color_2;
+					border-color: @orange;
+				}
+			}
+			td.today.disabled.disabled.active {
+				background-color: @background_color_2;
+				border-color: @orange;
+			}
+			td.today[disabled].active {
+				background-color: @background_color_2;
+				border-color: @orange;
+			}
+			td.today.disabled[disabled].active {
+				background-color: @background_color_2;
+				border-color: @orange;
+			}
+			td.range {
+				background: @light;
+				border-radius: 0;
+				&:hover {
+					background: @light;
+					border-radius: 0;
+				}
+			}
+			td.range.disabled {
+				background: @light;
+				border-radius: 0;
+				&:hover {
+					background: @light;
+					border-radius: 0;
+				}
+			}
+			td.range.today {
+				color: @dark;
+				background-color: @background_color_5;
+				border-color: @orange;
+				border-radius: 0;
+				&:hover {
+					color: @dark;
+					background-color: @background_color_5;
+					border-color: @orange;
+					border-radius: 0;
+					color: @dark;
+					background-color: @orange;
+					border-color: @orange;
+					&:hover {
+						color: @dark;
+						background-color: @orange;
+						border-color: @orange;
+					}
+					&:focus {
+						color: @dark;
+						background-color: @orange;
+						border-color: @orange;
+					}
+					&:active {
+						color: @dark;
+						background-color: @orange;
+						border-color: @orange;
+						background-image: none;
+					}
+					.badge {
+						color: @color_5;
+						background-color: @dark;
+					}
+				}
+				&:focus {
+					color: @dark;
+					background-color: @orange;
+					border-color: @orange;
+				}
+				&:active {
+					color: @dark;
+					background-color: @orange;
+					border-color: @orange;
+					background-image: none;
+				}
+				&:hover.active {
+					color: @dark;
+					background-color: @orange;
+					border-color: @orange;
+					background-image: none;
+				}
+				&:hover.disabled {
+					background-color: @background_color_5;
+					border-color: @orange;
+					&:hover {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+					&:focus {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+					&:active {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+				}
+				&:hover[disabled] {
+					background-color: @background_color_5;
+					border-color: @orange;
+					&:hover {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+					&:focus {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+					&:active {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+				}
+				&:hover.disabled.active {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				&:hover[disabled].active {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				.badge {
+					color: @color_5;
+					background-color: @dark;
+				}
+			}
+			td.range.today.disabled {
+				color: @dark;
+				background-color: @background_color_5;
+				border-color: @orange;
+				border-radius: 0;
+				background-color: @background_color_5;
+				border-color: @orange;
+				&:hover {
+					color: @dark;
+					background-color: @background_color_5;
+					border-color: @orange;
+					border-radius: 0;
+					color: @dark;
+					background-color: @orange;
+					border-color: @orange;
+					background-color: @background_color_5;
+					border-color: @orange;
+					&:hover {
+						color: @dark;
+						background-color: @orange;
+						border-color: @orange;
+					}
+					&:focus {
+						color: @dark;
+						background-color: @orange;
+						border-color: @orange;
+					}
+					&:active {
+						color: @dark;
+						background-color: @orange;
+						border-color: @orange;
+						background-image: none;
+					}
+					.badge {
+						color: @color_5;
+						background-color: @dark;
+					}
+				}
+				&:focus {
+					color: @dark;
+					background-color: @orange;
+					border-color: @orange;
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				&:active {
+					color: @dark;
+					background-color: @orange;
+					border-color: @orange;
+					background-image: none;
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				&:hover.active {
+					color: @dark;
+					background-color: @orange;
+					border-color: @orange;
+					background-image: none;
+				}
+				&:hover.disabled {
+					background-color: @background_color_5;
+					border-color: @orange;
+					&:hover {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+					&:focus {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+					&:active {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+				}
+				&:hover[disabled] {
+					background-color: @background_color_5;
+					border-color: @orange;
+					&:hover {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+					&:focus {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+					&:active {
+						background-color: @background_color_5;
+						border-color: @orange;
+					}
+				}
+				&:hover.disabled.active {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				&:hover[disabled].active {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				.badge {
+					color: @color_5;
+					background-color: @dark;
+				}
+			}
+			td.range.today.active {
+				color: @dark;
+				background-color: @orange;
+				border-color: @orange;
+				background-image: none;
+			}
+			td.range.today.disabled.active {
+				color: @dark;
+				background-color: @orange;
+				border-color: @orange;
+				background-image: none;
+				background-color: @background_color_5;
+				border-color: @orange;
+			}
+			td.range.today.disabled.disabled {
+				background-color: @background_color_5;
+				border-color: @orange;
+				&:hover {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				&:focus {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				&:active {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+			}
+			td.range.today[disabled] {
+				background-color: @background_color_5;
+				border-color: @orange;
+				&:hover {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				&:focus {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				&:active {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+			}
+			td.range.today.disabled[disabled] {
+				background-color: @background_color_5;
+				border-color: @orange;
+				&:hover {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				&:focus {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+				&:active {
+					background-color: @background_color_5;
+					border-color: @orange;
+				}
+			}
+			td.range.today.disabled.disabled.active {
+				background-color: @background_color_5;
+				border-color: @orange;
+			}
+			td.range.today[disabled].active {
+				background-color: @background_color_5;
+				border-color: @orange;
+			}
+			td.range.today.disabled[disabled].active {
+				background-color: @background_color_5;
+				border-color: @orange;
+			}
+			td.selected {
+				color: @white;
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+				&:hover {
+					color: @white;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+					color: @white;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					&:hover {
+						color: @white;
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:focus {
+						color: @white;
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:active {
+						color: @white;
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+						background-image: none;
+					}
+					.badge {
+						color: lighten(@base, 30%);
+						background-color: @white;
+					}
+				}
+				&:focus {
+					color: @white;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:active {
+					color: @white;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					background-image: none;
+				}
+				&:hover.active {
+					color: @white;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					background-image: none;
+				}
+				&:hover.disabled {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					&:hover {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:focus {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:active {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+				}
+				&:hover[disabled] {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					&:hover {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:focus {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:active {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+				}
+				&:hover.disabled.active {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:hover[disabled].active {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				.badge {
+					color: lighten(@base, 30%);
+					background-color: @white;
+				}
+			}
+			td.selected.disabled {
+				color: @white;
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+				&:hover {
+					color: @white;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+					color: @white;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					&:hover {
+						color: @white;
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:focus {
+						color: @white;
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:active {
+						color: @white;
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+						background-image: none;
+					}
+					.badge {
+						color: lighten(@base, 30%);
+						background-color: @white;
+					}
+				}
+				&:focus {
+					color: @white;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:active {
+					color: @white;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					background-image: none;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:hover.active {
+					color: @white;
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					background-image: none;
+				}
+				&:hover.disabled {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					&:hover {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:focus {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:active {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+				}
+				&:hover[disabled] {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+					&:hover {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:focus {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+					&:active {
+						background-color: lighten(@base, 30%);
+						border-color: lighten(@base, 30%);
+					}
+				}
+				&:hover.disabled.active {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:hover[disabled].active {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				.badge {
+					color: lighten(@base, 30%);
+					background-color: @white;
+				}
+			}
+			td.selected.active {
+				color: @white;
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+				background-image: none;
+			}
+			td.selected.disabled.active {
+				color: @white;
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+				background-image: none;
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+			}
+			td.selected.disabled.disabled {
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+				&:hover {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:focus {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:active {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+			}
+			td.selected[disabled] {
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+				&:hover {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:focus {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:active {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+			}
+			td.selected.disabled[disabled] {
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+				&:hover {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:focus {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+				&:active {
+					background-color: lighten(@base, 30%);
+					border-color: lighten(@base, 30%);
+				}
+			}
+			td.selected.disabled.disabled.active {
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+			}
+			td.selected[disabled].active {
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+			}
+			td.selected.disabled[disabled].active {
+				background-color: lighten(@base, 30%);
+				border-color: lighten(@base, 30%);
+			}
+			td.active {
+				color: @white;
+				background-color: @valid;
+				border-color: @valid;
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+				&:hover {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					&:hover {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:focus {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						background-image: none;
+					}
+					.badge {
+						color: @valid;
+						background-color: @white;
+					}
+				}
+				&:focus {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:active {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					background-image: none;
+				}
+				&:hover.active {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					background-image: none;
+				}
+				&:hover.disabled {
+					background-color: @valid;
+					border-color: @valid;
+					&:hover {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:focus {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+				}
+				&:hover[disabled] {
+					background-color: @valid;
+					border-color: @valid;
+					&:hover {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:focus {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+				}
+				&:hover.disabled.active {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:hover[disabled].active {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				.badge {
+					color: @valid;
+					background-color: @white;
+				}
+			}
+			td.active.disabled {
+				color: @white;
+				background-color: @valid;
+				border-color: @valid;
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+				background-color: @valid;
+				border-color: @valid;
+				&:hover {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					background-color: @valid;
+					border-color: @valid;
+					&:hover {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:focus {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						color: @white;
+						background-color: @valid;
+						border-color: @valid;
+						background-image: none;
+					}
+					.badge {
+						color: @valid;
+						background-color: @white;
+					}
+				}
+				&:focus {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:active {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					background-image: none;
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:hover.active {
+					color: @white;
+					background-color: @valid;
+					border-color: @valid;
+					background-image: none;
+				}
+				&:hover.disabled {
+					background-color: @valid;
+					border-color: @valid;
+					&:hover {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:focus {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+				}
+				&:hover[disabled] {
+					background-color: @valid;
+					border-color: @valid;
+					&:hover {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:focus {
+						background-color: @valid;
+						border-color: @valid;
+					}
+					&:active {
+						background-color: @valid;
+						border-color: @valid;
+					}
+				}
+				&:hover.disabled.active {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:hover[disabled].active {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				.badge {
+					color: @valid;
+					background-color: @white;
+				}
+			}
+			td.active.active {
+				color: @white;
+				background-color: @valid;
+				border-color: @valid;
+				background-image: none;
+			}
+			td.active.disabled.active {
+				color: @white;
+				background-color: @valid;
+				border-color: @valid;
+				background-image: none;
+				background-color: @valid;
+				border-color: @valid;
+			}
+			td.active.disabled.disabled {
+				background-color: @valid;
+				border-color: @valid;
+				&:hover {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:focus {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:active {
+					background-color: @valid;
+					border-color: @valid;
+				}
+			}
+			td.active[disabled] {
+				background-color: @valid;
+				border-color: @valid;
+				&:hover {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:focus {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:active {
+					background-color: @valid;
+					border-color: @valid;
+				}
+			}
+			td.active.disabled[disabled] {
+				background-color: @valid;
+				border-color: @valid;
+				&:hover {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:focus {
+					background-color: @valid;
+					border-color: @valid;
+				}
+				&:active {
+					background-color: @valid;
+					border-color: @valid;
+				}
+			}
+			td.active.disabled.disabled.active {
+				background-color: @valid;
+				border-color: @valid;
+			}
+			td.active[disabled].active {
+				background-color: @valid;
+				border-color: @valid;
+			}
+			td.active.disabled[disabled].active {
+				background-color: @valid;
+				border-color: @valid;
+			}
+		}
+	}
+	th.datepicker-switch {
+		width: 145px;
+	}
+	thead {
+		tr {
+			&:first-child {
+				th {
+					cursor: pointer;
+					&:hover {
+						background: @light;
+					}
+				}
+				th.cw {
+					cursor: default;
+					background-color: @background_color_1;
+				}
+			}
+		}
+	}
+	tfoot {
+		tr {
+			th {
+				cursor: pointer;
+				&:hover {
+					background: @light;
+				}
+			}
+		}
+	}
+	.cw {
+		font-size: 10px;
+		width: 12px;
+		padding: 0 2px 0 5px;
+		vertical-align: middle;
+	}
+}
+.greenid-datepicker-container.datepicker-inline {
+	width: 220px;
+}
+.greenid-datepicker-container.datepicker.greenid-datepicker-container.datepicker-rtl {
+	direction: rtl;
+	table {
+		tr {
+			td {
+				span {
+					float: right;
+				}
+			}
+		}
+	}
+}
+.greenid-datepicker-container.datepicker-dropdown {
+	top: 0;
+	left: 0;
+	&:before {
+		content: '';
+		display: inline-block;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px solid #ccc;
+		border-top: 0;
+		border-bottom-color: @border_bottom_color_1;
+		position: absolute;
+	}
+	&:after {
+		content: '';
+		display: inline-block;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-bottom: 6px solid #fff;
+		border-top: 0;
+		position: absolute;
+	}
+}
+.greenid-datepicker-container.datepicker-dropdown.datepicker-orient-left {
+	&:before {
+		left: 6px;
+	}
+	&:after {
+		left: 7px;
+	}
+}
+.greenid-datepicker-container.datepicker-dropdown.datepicker-orient-right {
+	&:before {
+		right: 6px;
+	}
+	&:after {
+		right: 7px;
+	}
+}
+.greenid-datepicker-container.datepicker-dropdown.datepicker-orient-top {
+	&:before {
+		top: -7px;
+	}
+	&:after {
+		top: -6px;
+	}
+}
+.greenid-datepicker-container.datepicker-dropdown.datepicker-orient-bottom {
+	&:before {
+		bottom: -7px;
+		border-bottom: 0;
+		border-top: 7px solid #999;
+	}
+	&:after {
+		bottom: -6px;
+		border-bottom: 0;
+		border-top: 6px solid #fff;
+	}
+}
+.greenid-datepicker-container.datepicker.days {
+	div.datepicker-days {
+		display: block;
+	}
+}
+.greenid-datepicker-container.datepicker.months {
+	div.datepicker-months {
+		display: block;
+	}
+}
+.greenid-datepicker-container.datepicker.years {
+	div.datepicker-years {
+		display: block;
+	}
+}
+.table-striped {
+	.greenid-datepicker-container.datepicker {
+		table {
+			tr {
+				td {
+					background-color: @background_color_1;
+				}
+				th {
+					background-color: @background_color_1;
+				}
+			}
+		}
+	}
+}
+.greenid-datepicker-container {
+	.input-group.date {
+		.input-group-addon {
+			i {
+				cursor: pointer;
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+	.input-daterange {
+		input {
+			text-align: center;
+			&:first-child {
+				border-radius: 3px 0 0 3px;
+			}
+			&:last-child {
+				border-radius: 0 3px 3px 0;
+			}
+		}
+		.input-group-addon {
+			width: auto;
+			min-width: 16px;
+			padding: 4px 5px;
+			font-weight: normal;
+			line-height: 1.42857143;
+			text-align: center;
+			text-shadow: 0 1px 0 #fff;
+			vertical-align: middle;
+			background-color: @light;
+			border: solid #ccc;
+			border-width: 2px 0;
+			margin-left: -5px;
+			margin-right: -5px;
+		}
+	}
+}
