@@ -239,8 +239,8 @@
             margin-top: 2px
         }
         .greenid-so-content-select-item-selected {
-          background: @brand;
-          color: white
+            background: @brand;
+            color: white
         }
         /* DS - lists */
         .greenid-so-content-select {
@@ -613,10 +613,18 @@
             background-color: transparent;
         }
         .greenid-so-content-image-container {
-            height: 200px;
-            background-image: url(./src/img/passport.png);
-            background-size: contain;
-            background-repeat: no-repeat;
+            img {
+                display: inline;
+            }
+            .greenid-so-content-image-photopage {
+                content: url(./src/img/passport.png);
+            }
+            .greenid-so-content-image-front {
+                content: url(./src/img/driver-licence-front.png);
+            }
+            .greenid-so-content-image-back {
+                content: url(./src/img/driver-licence-back.png);
+            }
         }
         .btn-primary,
         .greenid-so-content-select-noicon-dropdown {
