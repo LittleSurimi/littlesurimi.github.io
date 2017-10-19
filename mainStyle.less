@@ -133,7 +133,7 @@
                 border-color: rgba(140, 198, 63, .2);
                 color: @valid;
             }
-            &-danger, 
+            &-danger,
             &-failed {
                 background-color: rgba(252, 67, 73, .1);
                 border-color: rgba(252, 67, 73, .2);
@@ -240,7 +240,7 @@
         }
         .greenid-so-content-select-item-selected {
             background: @brand !important;
-            color: white !important; 
+            color: white !important;
         }
         /* DS - lists */
         .greenid-so-content-select {
@@ -615,7 +615,7 @@
         .greenid-so-content-image-container {
             img {
                 display: block;
-                width:auto;
+                width: auto;
                 margin: auto;
             }
             .greenid-so-content-image-photopage {
@@ -745,9 +745,16 @@
     }
 }
 
+
 /* Verify your id */
-#greenid-so-content-verify .greenid-so-content-nav {
-    background-color: @alert !important;
+
+#greenid-so-content-verify {
+    h1 {
+        color: @alert !important
+    }
+    .greenid-so-content-nav {
+        background-color: @alert !important;
+    }
 }
 
 .greenid-modal.fade .modal-dialog {
