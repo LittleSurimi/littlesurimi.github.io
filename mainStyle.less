@@ -173,7 +173,6 @@
             strong {
                 font-family: @font;
                 font-weight: 700;
-                color: @turquoise;
             }
         }
         a {
@@ -197,7 +196,8 @@
                 text-align: right
             }
         }
-        .btn-primary {
+        .btn-primary,
+        .btn-primary[disabled] {
             background-color: transparent;
             background-image: none;
             color: @brand;
@@ -211,6 +211,7 @@
             font-weight: 700;
             margin-top: @unit*2;
             margin-bottom: @unit/ 4;
+            -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
             &:hover {
                 background-color: transparent;
                 background-image: none;
