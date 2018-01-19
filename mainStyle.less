@@ -90,7 +90,7 @@
             //align-items: center;
             //justify-content: space-between;
             .btn {
-                color: @white;
+                color: @base;
                 background-color: @turquoise;
                 background: none;
                 font-size: inherit;
@@ -262,10 +262,10 @@
                 margin-top: 0;
             }
             &-noicon-dropdown {
-                background: none !important;
+                background: @turquoise !important;
                 position: relative;
                 &:hover {
-                    background: none !important;
+                    background: @turquoise !important;
                     color: inherit;
                 }
                 .glyphicon {
@@ -755,7 +755,11 @@
     }
 }
 
-
+#greenid-so-content-doc-select {
+    .greenid-so-content-select {
+        margin-top: @unit*10;
+    }
+}
 
 .greenid-modal.fade .modal-dialog {
     -webkit-transform: translate3d(0, 0, 0);
