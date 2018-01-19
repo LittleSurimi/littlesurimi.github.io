@@ -46,11 +46,11 @@
 
 .greenid-modal.fade.in,
 .greenid-so-content {
-    display: flex;
-    flex: 1;
-    min-height: 100vh;
-    justify-content: space-between;
-    flex-direction: column;
+    //display: flex;
+    //flex: 1;
+    //min-height: 100vh;
+    //justify-content: space-between;
+    //flex-direction: column;
     margin: 0;
     padding: 0;
     #greenid-container {
@@ -58,13 +58,18 @@
         color: @base;
         position: relative;
         font-size: @unit;
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: space-between;
+        //display: flex;
+        //flex: 1;
+        //flex-direction: column;
+        //justify-content: space-between;
         padding: @unit*2;
         padding-top: 0;
         margin-bottom: 0;
+        &::after{
+            position: absolute;
+            top: 0;
+            border-bottom: 2px solid rgba(215, 55, 29, 10);
+        }
         /* Illustrations */
         .greenid-so-content-image-container {
             margin: 0;
@@ -75,18 +80,18 @@
         /*  Navigation */
         .greenid-so-content-nav {
             margin: 0;
-            margin-left: -@unit*2;
-            padding: 0 @unit;
-            height: @unit*4.25;
-            background-color: @turquoise;
-            color: @white;
+            //margin-left: -@unit*2;
+            //padding: 0 @unit;
+            //height: @unit*4.25;
+            background-color: @white;
+            //color: @white;
             width: 100vw;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            //display: flex;
+            //align-items: center;
+            //justify-content: space-between;
             .btn {
-                color: inherit;
-                background-color: transparent;
+                color: @white;
+                background-color: @turquoise;
                 background: none;
                 font-size: inherit;
                 padding: @unit;
@@ -152,7 +157,7 @@
             color: @brand;
             line-height: @headline * @lineHeight;
             font-weight: 700;
-            margin: @unit*2 0;
+            margin: @unit 0 @unit*2;
             strong {
                 font-family: @fontAccent;
                 font-weight: bold;
@@ -198,14 +203,14 @@
         }
         .btn-primary,
         .btn-primary[disabled] {
-            background-color: transparent;
+            background-color: @turquoise;
             background-image: none;
-            color: @brand;
+            color: @white;
             text-transform: capitalize;
             padding: @unit;
             width: 100%;
             font-size: @unit;
-            border: @border solid @brand;
+            border: @border solid @turquoise;
             border-radius: @border;
             font-family: @font;
             font-weight: 700;
@@ -220,6 +225,7 @@
         .btn-link {
             margin-bottom: 0;
             color: @base;
+            border: @border solid @base;
             opacity: @mediumOpacity;
             font-weight: 700;
             font-size: @unit*.875;
@@ -240,7 +246,7 @@
             margin-top: 2px
         }
         .greenid-so-content-select-item-selected {
-            background: @brand !important;
+            background: @turquoise !important;
             color: white !important;
         }
         /* DS - lists */
