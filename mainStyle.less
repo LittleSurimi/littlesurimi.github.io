@@ -43,6 +43,7 @@
     font-family: @font;
     color: @base;
 }
+// fake header border bottom
 .greenid-so-content&::after{
     position: absolute;
     top: 0;
@@ -51,6 +52,7 @@
     height: 50px;
     position: absolute;
     width: 100%;
+    z-index: -1;
 }
 .greenid-modal.fade.in,
 .greenid-so-content {
@@ -223,7 +225,7 @@
             margin-bottom: @unit/ 4;
             -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
             &:hover {
-                background-color: transparent;
+                background-color: @turquoise;
                 background-image: none;
             }
         }
@@ -760,9 +762,10 @@
     }
 }
 
+// style for 2nd screen ( user select wich document ID they want to use )
 #greenid-so-content-doc-select {
     .greenid-so-content-select {
-        margin-top: @unit*10;
+        margin-top: @unit*10 !important; // put btn at the nottom of the screen
     }
 }
 
