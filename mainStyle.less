@@ -94,7 +94,7 @@
             //background-color: @white;
             min-height:@unit*3;
             //color: @white;
-            width: 100vw;
+            //width: 100vw;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -118,6 +118,7 @@
                 content: 'arrow_backward'
             }
             .btn-cancel {
+                margin-left: -26px;
                 &:before {
                     content: 'clear'
                 }
@@ -127,7 +128,8 @@
                     }
                     &:after {
                         .material-icons;
-                        content: 'clear'
+                        content: 'clear';
+                        margin-right: -26px;
                     }
                 }
             }
@@ -768,14 +770,14 @@
     }
 }
 
-// style for 2nd screen ( user select wich document ID they want to use )
+// style for 2nd screen ( user select wich document ID they want to use ) and show me instruction for selfie
 #greenid-so-card-selfie-intro-button,
-#greenid-so-content-doc-select {
-    .greenid-so-content-select {
-        margin-top: @unit*10 !important; // put btn at the nottom of the screen
-    }
+#greenid-so-content-doc-select .greenid-so-content-select{
+    margin-top: @unit*10 !important; // put btn at the bottom of the screen
 }
-
+.greenid-alert ~ #greenid-so-content-doc-select .greenid-so-content-select{
+    margin-top: @unit*2 !important; // but not when an alert is displayed
+}
 .greenid-modal.fade .modal-dialog {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
