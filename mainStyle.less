@@ -391,10 +391,11 @@
         }
         label,
         .greenid-so-content-agree-label { //Checkbox aggreement
-            font-size: @caption;
-            font-weight: 700;
+            font-size: @unit*.875;
+            font-weight: 400;
             font-family: @font;
             color: @base;
+            text-transform: capitalize;
         }
         .has-success {
             .help-block,
@@ -801,7 +802,7 @@ hr {
     margin: 0;
 }
 
-//BUG fix on width for check info and address screens
+//BUG fix on width for check info and address screens form seem to overlap so we force element within to get a width inside
 #greenid-so-content-extra-fields,
 #greenid-so-content-confirm-details{
     h1, 
