@@ -317,6 +317,7 @@
         /* DS - Forms */
         .form-group {
             margin-bottom: @unit*1.5;
+            max-width: 85vh;
             &:first-of-type {
                 margin-top: @unit*1.5;
             }
@@ -802,10 +803,12 @@ hr {
 #greenid-so-content-extra-fields,
 #greenid-so-content-confirm-details{
     h1, 
-    p, 
-    .form-group, 
+    p{
+        margin-right: 32px !important; 
+    } 
     #greenid-so-confirm-details-button,
     .checkbox {
+        max-width: 85vh;
         margin-right: 32px !important; 
     }
 }
