@@ -315,9 +315,7 @@
             }
         }
         /* DS - Forms */
-        .checkbox {max-width: 90% !important;}
         .form-group {
-            max-width: 90% !important;
             margin-bottom: @unit*1.5;
             &:first-of-type {
                 margin-top: @unit*1.5;
@@ -798,4 +796,15 @@
 
 hr {
     margin: 0;
+}
+
+//BUG fix on width for check info and address screens
+#greenid-so-content-extra-fields{
+    h1, 
+    p, 
+    .form-group, 
+    #greenid-so-confirm-details-button,
+    .checkbox {
+        max-width: 90% !important;
+    }
 }
