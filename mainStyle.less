@@ -52,7 +52,7 @@
     height: 50px;
     position: absolute;
     width: 100%;
-    z-index: 0;
+    z-index: -1;
 }
 .greenid-modal.fade.in,
 .greenid-so-content {
@@ -95,23 +95,24 @@
             min-height:@unit*3;
             //color: @white;
             //width: 100vw;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 2000;
+            //display: flex;
+            //align-items: center;
+            //justify-content: space-between;
+            //z-index: 2000;
             .btn {
                 color: @base;
                 //background-color: @turquoise;
                 background: none;
                 font-size: inherit;
                 padding: @unit;
-                display: flex;
-                align-items: center;
-                position: relative;
+                //display: flex;
+                //align-items: center;
+                //position: relative;
                 margin-top: @unit;
                 &:before,
                 &:after {
                     .material-icons;
+                    vertical-align: bottom;
                 }
             }
             .btn-back:before {
@@ -703,7 +704,7 @@
 }
 
 .greenid-modal {
-    z-index: 3000;
+    //z-index: 3000;
     .modal-dialog {
         margin: @unit*2 ;
         //display: flex;
