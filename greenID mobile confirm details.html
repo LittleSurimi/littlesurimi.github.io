@@ -1,0 +1,384 @@
+<div id="greenid-so-content-confirm-details" class="greenid-so-content greenid-so-content-no-padding" style="height: 724px;">
+	<div id="greenid-container">
+		<form id="greenid-so-confirm-details-form" onsubmit="return false;">
+			<div id="greenid-so-content-core-fields" class="greenid-so-content  greenid-so-back-button-accessible greenid-so-waiting-back-button-content"
+			 style="height: 613px;">
+
+				<div class="greenid-so-content-nav">
+					<button type="button" data-target="#greenid-so-content-confirm-details-cancel-modal" class="btn btn-cancel greenid-modal-launch">Cancel</button>
+					<div class="greenid-modal fade" id="greenid-so-content-confirm-details-cancel-modal" tabindex="-1" aria-hidden="true">
+
+
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<span class="greenid-sr-only" id="dialog-start" tabindex="-1">Dialog start</span>
+								<div class="modal-header">
+									<button type="button" class="greenid-modal-close greenid-x" aria-label="close">×</button>
+									<h4 class="modal-title" id="greenid-modal-title">Are you sure you want to cancel this process?</h4>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" onclick="greenidSimpleOnBoard.cancel()">Yes, quit now</button>
+									<button type="button" class="btn btn-default greenid-modal-close">No, continue the process</button>
+								</div>
+								<span class="greenid-sr-only">Dialog end</span>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+
+
+
+				<h1>Please check the details we found on your NZ passport</h1>
+
+
+
+				<div class="form-group">
+
+					<label for="documentNumber" class="control-label">NZ passport Number</label>
+
+					<div class="input-group clear">
+						<input type="text" name="documentNumber" id="documentNumber" class="form-control badcharsvalidation  required" value="A124567"
+						 aria-required="true" aria-invalid="false">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+
+
+
+
+
+
+				<div class="form-group">
+
+					<label for="documentExpiryDate" class="control-label">Expiry Date
+						<span class="help-block">(DD/MM/YYYY)</span>
+					</label>
+
+					<div class="input-group date clear">
+						<input type="text" name="documentExpiryDate" id="documentExpiryDate" class="form-control expirydatevalidation replaceDashes required"
+						 value="19/04/2022" aria-required="true" aria-invalid="false">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+						<span class="input-group-addon greenid-datepicker">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+
+
+
+
+
+				<input type="hidden" name="imageCode" id="imageCode" class="form-control required" value="70bd38a2f0550b8d" aria-required="true">
+				<input type="hidden" name="documentType" id="documentType" class="form-control required" value="PASSPORT.NZ" aria-required="true">
+				<input type="hidden" name="accountId" id="accountId" class="form-control required" value="first_nz_capital" aria-required="true">
+				<input type="hidden" name="apiCode" id="apiCode" class="form-control required" value="" aria-required="true">
+
+
+				<div class="form-group">
+
+					<label for="givenName" class="control-label">First Name</label>
+
+					<div class="input-group clear">
+						<input type="text" name="givenName" id="givenName" class="form-control namevalidation  required" value="THOMAS" aria-required="true"
+						 aria-invalid="false">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+
+					<label for="middleNames" class="control-label">Middle Name(s)</label>
+
+					<div class="input-group clear">
+						<input type="text" name="middleNames" id="middleNames" class="form-control namevalidation " value="JOSEPH LEE" aria-invalid="false">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+
+					<label for="surname" class="control-label">Surname</label>
+
+					<div class="input-group clear">
+						<input type="text" name="surname" id="surname" class="form-control namevalidation  required" value="MADDEN" aria-required="true"
+						 aria-invalid="false">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+				<input type="hidden" name="country" id="country" class="form-control  required" value="NZ" aria-required="true">
+
+
+
+
+
+				<div class="form-group">
+
+					<label for="dob" class="control-label">Date of birth
+						<span class="help-block">(DD/MM/YYYY)</span>
+					</label>
+					<div class="input-group date clear">
+						<input type="text" name="dob" id="dob" class="form-control dobvalidation replaceDashes required" value="28/09/1978" aria-required="true"
+						 aria-invalid="false">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+						<span class="input-group-addon greenid-datepicker greenid-datepicker-dob">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+
+				</div>
+
+
+
+
+
+
+				<!-- hard-coded EZ Link wording for now -->
+				<button type="button" id="greenid-so-content-extra-fields-transition-button" class="btn btn-primary btn-next" aria-invalid="false">Confirm</button>
+
+			</div>
+			<div id="greenid-so-content-extra-fields" class="greenid-so-content" style="height: auto;">
+
+				<div class="greenid-so-content-nav">
+					<button type="button" data-target="#greenid-so-content-extra-fields-cancel-modal" class="btn btn-cancel greenid-modal-launch">Cancel</button>
+					<div class="greenid-modal fade" id="greenid-so-content-extra-fields-cancel-modal" tabindex="-1" aria-hidden="true">
+
+
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<span class="greenid-sr-only" id="dialog-start" tabindex="-1">Dialog start</span>
+								<div class="modal-header">
+									<button type="button" class="greenid-modal-close greenid-x" aria-label="close">×</button>
+									<h4 class="modal-title" id="greenid-modal-title">Are you sure you want to cancel this process?</h4>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" onclick="greenidSimpleOnBoard.cancel()">Yes, quit now</button>
+									<button type="button" class="btn btn-default greenid-modal-close">No, continue the process</button>
+								</div>
+								<span class="greenid-sr-only">Dialog end</span>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+				<h1>Personal details</h1>
+				<p>We need a couple more details from you</p>
+
+				<div class="form-group">
+					<label for="flatNumber" class="control-label">Unit number</label>
+					<div class="input-group clear">
+
+						<input type="text" name="flatNumber" id="flatNumber" class="form-control  " value="" aria-required="false">
+
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="streetNumber" class="control-label">Street number</label>
+					<div class="input-group clear">
+
+						<input type="text" name="streetNumber" id="streetNumber" class="form-control  required" value="" aria-required="true">
+
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="streetName" class="control-label">Street name</label>
+					<div class="input-group clear">
+
+						<input type="text" name="streetName" id="streetName" class="form-control  required" value="" aria-required="true">
+
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="streetType" class="control-label">Street type</label>
+					<div class="input-group clear">
+
+						<input type="text" name="streetType" id="streetType" class="form-control  required" value="" aria-required="true">
+
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="suburb" class="control-label">Suburb</label>
+					<div class="input-group clear">
+
+						<input type="text" name="suburb" id="suburb" class="form-control  required" value="" aria-required="true">
+
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="townCity" class="control-label">Town</label>
+					<div class="input-group clear">
+
+						<input type="text" name="townCity" id="townCity" class="form-control  required" value="" aria-required="true">
+
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="postcode" class="control-label">Postcode</label>
+					<div class="input-group clear">
+
+						<input type="text" name="postcode" id="postcode" class="form-control postcodevalidation required" value="" aria-required="true">
+
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" data-action="greenid-clear-field" aria-label="clear this field">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+
+				<button type="submit" id="greenid-so-confirm-details-button" onclick="greenidSimpleOnBoard.pressButton('register_with_details', event)"
+				 class="btn btn-primary btn-next">Continue</button>
+			</div>
+
+
+			<input type="hidden" name="sdkCapability" id="sdkCapability" class="form-control  required" value="6" aria-required="true">
+
+		</form>
+	</div>
+	<script type="text/javascript">
+		greenidJQuery(document).ready(function () {
+			greenidUiBehaviours.initiateDatepicker();
+			greenidUiBehaviours.showHideInfoModals(true);
+
+			// clear the input fields on click of the 'x'
+			greenidJQuery("[data-action='greenid-clear-field']").click(function () {
+				greenidJQuery(this).parent().siblings(":input").val("").focus();
+			})
+
+			// resize the single name textarea as the content goes over multiple lines (based on http://www.impressivewebs.com/textarea-auto-resize/)
+			var resizeTextarea = function (textarea, hiddenDiv) {
+				var content = textarea.val();
+				content = content.replace(/\n/g, '<br>');
+				hiddenDiv.html(content + '<br class="greenid-lbr">');
+				var newHeight = hiddenDiv.outerHeight();
+
+				textarea.css('height', newHeight)
+					.next('.input-group-btn')
+					.find('[data-action="greenid-clear-field"]')
+					.css('height', newHeight);
+			}
+
+
+			greenidJQuery(".greenid-singlename-field").each(function (index, value) {
+
+				var hiddenDiv = greenidJQuery(document.createElement('div'));
+				var hiddenDivId = "greenid-textarea-hiddendiv-" + index;
+				hiddenDiv.attr("id", hiddenDivId).addClass("greenid-textarea-hiddendiv");
+
+
+				var textareaClass = "greenid-textarea-autoresized-" + index;
+				greenidJQuery(this).addClass(textareaClass + " greenid-textarea-autoresized");
+				var textarea = greenidJQuery("." + textareaClass);
+
+
+				var parentDiv = greenidJQuery('#greenid-so-content-core-fields')
+
+
+				parentDiv.append(hiddenDiv);
+
+				resizeTextarea(textarea, hiddenDiv);
+
+				textarea.on('keyup', function () {
+					resizeTextarea(textarea, hiddenDiv);
+				});
+			})
+
+			greenidJQuery("#greenid-so-content-extra-fields-transition-button").click(function () {
+
+				if (greenidValidator.validateAllFields("simpleOnBoardConfirmation", "greenid-so-content-core-fields", false)) {
+					var currentTemplate = greenidJQuery(this).parents(".greenid-so-content").attr("id");
+					greenidJQuery("#greenid-so-content-extra-fields").removeClass("greenid-so-waiting-content-hidden");
+
+					// there are two cancel modals in the page, so ditch the old one on page transition
+					// and set the modal container to the extra fields div.
+					greenidJQuery("#greenid-so-content-core-fields #greenid-so-btn-cancel-modal").remove();
+					greenidClientContext.modalContainer = "#greenid-so-content-extra-fields";
+
+					greenidSimpleOnBoard.transitionPagesSimple(currentTemplate);
+				} else {
+					return false;
+				}
+			})
+
+			// Because of the absolute positioning of the .greenid-so-content divs and the fact that these become nested if showExtraDataItems is used
+			// the outer-most .greenid-so-content needs to receive a height so that optional consent modals have a container that is visible
+			if (greenidJQuery("#greenid-so-content-core-fields").length > 0) {
+				contentHeight = greenidJQuery("#greenid-so-content-core-fields").outerHeight();
+				greenidJQuery("#greenid-so-content-confirm-details").css("height", contentHeight + "px");
+			}
+		});
+	</script>
+</div>
