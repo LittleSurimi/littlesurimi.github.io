@@ -795,7 +795,6 @@
     &:extend(.greenid-modal);
     background-color: @white !important;
     .modal-content {
-      &:extend(.modal-content);
       align-items: center;
       justify-content: center;
       .modal-title {
@@ -803,7 +802,7 @@
         visibility: hidden;
         width: 100%;
         left: 0;
-        top: 25vh;
+        top: 20vh;
         &:after {
           content: "Sorry,";
           position: absolute;
@@ -815,6 +814,7 @@
           text-align: center;
           color: @base !important;
           font-size: @unit !important;
+          font-weight: normal;
         }
       }
       .modal-header {
@@ -826,7 +826,7 @@
         visibility: hidden;
         width: 100%;
         left: 0;
-        top: 35vh;
+        top: 30vh;
         &:after {
           content: "we are experiencing an issue.";
           position: absolute;
