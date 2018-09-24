@@ -80,7 +80,8 @@
         font-weight: 700;
         color: @accent;
       }
-      .btn-cancel{
+      .btn-cancel, 
+      .btn-back{
         margin-left: 0
       }
     }
@@ -586,20 +587,12 @@
 
 #greenid-so-content-ocr-intro,
 #greenid-so-content-ocr-back-intro {
-  //background-color: @dark;
   #greenid-container {
-    //background: transparent;
-    h1,
-    p {
-      //color: @white;
-    }
-    .greenid-so-content-nav {
-      //background-color: transparent;
-    }
     .greenid-so-content-image-container {
       img {
         display: block;
-        width: auto;
+        width: 100%;
+        height: auto;
         margin: auto;
       }
       .greenid-so-content-image-photopage {
@@ -614,9 +607,6 @@
     }
     .btn-primary,
     .greenid-so-content-select-noicon-dropdown {
-      //color: @white;
-      //border-color: @white;
-      //background: @dark;
       position: relative;
     }
     .greenid-so-content-select-noicon-dropdown + .btn-next {
