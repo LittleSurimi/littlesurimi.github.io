@@ -861,8 +861,8 @@ hr {
 
 // Complete later modal
 #greenid-so-btn-complete-later-modal {
-  .modal-body {
-    p:first-child {
+  .modal-header{
+    .modal-title{
       visibility: hidden !important;
       position: relative !important;
       &:after {
@@ -870,13 +870,22 @@ hr {
         position: absolute !important;
         top: 0 !important;
         left: 0 !important;
-        content: "You can quit the identity verification process now and complete your ID verification later by mailing us certified copies of your identity documents.
-
-        Your application will remain incomplete until you provide a proof of ID and address." !important;
+        content: "Quit this process" !important;
       }
     }
-    p:last-child {
-      padding-top: @unit*2 !important;
+  }
+  .modal-body {
+    p{
+      visibility: hidden !important;
+      position: relative !important;
+      &::after {
+        visibility: visible !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        content: "You can quit the identity verification process now and complete your ID verification later by mailing us certified copies of your identity documents.
+        Your application will remain incomplete until you provide a proof of ID and address";
+      }
     }
   }
 }
