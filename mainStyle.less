@@ -875,17 +875,19 @@ hr {
     }
   }
   .modal-body {
+    position: relative !important;
     p{
       visibility: hidden !important;
       position: relative !important;
-      &::after {
-        visibility: visible !important;
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        content: "You can quit the identity verification process now and complete your ID verification later by mailing us certified copies of your identity documents.
-        Your application will remain incomplete until you provide a proof of ID and address";
-      }
+
+    }
+    &::after {
+      visibility: visible !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      content: "You can quit the identity verification process now and complete your ID verification later by mailing us certified copies of your identity documents.
+      Your application will remain incomplete until you provide a proof of ID and address"!important;
     }
   }
 }
