@@ -125,7 +125,7 @@
       color: @brand;
       line-height: @headline * @lineHeight;
       font-weight: 500;
-      margin: @unit*3 0 @unit*2;
+      margin: @unit*2 0 ;
       strong {
         font-family: @fontAccent;
         font-weight: bold;
@@ -597,8 +597,7 @@
         display: block;
         width: 100%;
         height: auto;
-        margin: auto;
-        margin-bottom: @unit*2;
+        margin: @unit*2 auto;
       }
       .greenid-so-content-image-photopage {
         content: url(./src/img/passport.png);
@@ -814,16 +813,23 @@
   }
 }
 
-// style for 2nd screen ( user select wich document ID they want to use ) and show me instruction for selfie
-#greenid-so-selfie-intro-button {
-  margin-top: @unit*10 !important;
-}
+// style for 
+// - 2nd screen ( user select wich document ID they want to use ) 
+// - show me instruction for selfie (first screen no pictures)
+// - show me instruction for selfie (LAST screen with pictures)
 
 // put btn at the bottom of the screen
 #greenid-so-content-doc-select {
   h1 + .greenid-so-content-select {
     margin-top: @unit*10 !important; // put btn at the bottom of the screen
   }
+}
+
+#greenid-so-selfie-intro-button {
+  margin-top: @unit*10 !important;
+}
+#greenid-so-selfie-instructions3-button{
+  margin-top: @unit;
 }
 
 .greenid-modal.fade .modal-dialog {
@@ -928,7 +934,7 @@ hr {
       text-align: left;
       top:280px;
       left: 0;
-      content: 'You can quit the identity verification process now and complete your ID verification later by mailing us certified copies of your identity documents.'!important;
+      content:'You can quit the identity verification process now and complete your ID verification later by mailing us certified copies of your identity documents.'!important;
     }
     &:after {
       font-family: @font!important;
@@ -938,7 +944,7 @@ hr {
       text-align: left;
       top:-110px;
       left: 0;
-      content: 'Your application will remain incomplete until you provide a proof of ID and address'!important;
+      content:'Your application will remain incomplete until you provide a proof of ID and address'!important;
     }
   }
 }
