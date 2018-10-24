@@ -936,14 +936,14 @@ hr {
   }
   .modal-footer{
     position: relative !important;
-    margin-top:240px;
+    margin-top:@unit*14;
     &:before {
       font-family: @font!important;
       font-size: @subheader!important;
       color: @white!important;
       position:absolute;
       text-align: left;
-      top:-280px;
+      top:-@unit*16;
       left: 0;
       content:'You can quit the identity verification process now and complete your ID verification later by mailing us certified copies of your identity documents.'!important;
     }
@@ -953,7 +953,7 @@ hr {
       color: @white!important;
       position:absolute;
       text-align: left;
-      top:-110px;
+      top:-@unit*6.5;
       left: 0;
       content:'Your application will remain incomplete until you provide a proof of ID and address'!important;
     }
