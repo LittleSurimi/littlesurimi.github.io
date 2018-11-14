@@ -95,6 +95,7 @@
       font-size: @subheader;
       background-image: none;
       padding: 0px;
+      margin-bottom: @unit/2;
       min-height: @unit*3;
       border-width: 0px;
       &-success {
@@ -194,13 +195,18 @@
         background-image: none;
       }
     }
+    .btn-default{
+      padding: @unit;
+      width: 100%;
+      font-size: @subheader;
+    }
     .btn-link {
       margin-bottom: 0;
       border: none;
       border-radius: @border;
       background: rgba(33,50,73,0.10);
       font-weight: 500;
-      font-size: 18px;
+      font-size: @subheader;
       color: rgba(33,50,73,0.40);
       text-align: center;
       width: 100%;
@@ -968,7 +974,7 @@ hr {
       color: @white!important;
       position:absolute;
       text-align: left;
-      top:-@unit*8;
+      top:-@unit*7;
       left: 0;
       content:'Your application will remain incomplete until you provide a proof of ID and address'!important;
     }
