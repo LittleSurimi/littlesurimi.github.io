@@ -37,7 +37,7 @@
 }
 
 /* END Icon Set */
-
+.greenid-sr-only{display: none;}
 .greenid-so {
   font-family: @font;
   color: @base;
@@ -225,6 +225,7 @@
     }
     /* DS - lists */
     .greenid-so-content-select {
+      padding: 0;
       li {
         margin-bottom: 0
       }
@@ -248,13 +249,22 @@
         }
       }
     }
+    .greenid-so-content-dropcap-container{
+
+    }
+    .greenid-so-content-dropcap-listitem{
+      list-style-type: none;
+      position:relative;
+    }
     .greenid-so-content-dropcap {
       font-family: @font;
       font-size: @headline;
       color: @turquoise;
       line-height: @headline * @lineHeight;
       font-weight: 200;
-      top: -18px
+      top: -12px;
+      position:absolute;
+      left: -32px;
     }
     .collapse,
     .collapsing {
